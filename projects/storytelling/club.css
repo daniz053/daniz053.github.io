@@ -3,55 +3,55 @@ header {
   text-align: right;
   font-family: proxima-nova, sans-serif;
   font-size: 7.5em;
-  color: #000000;
+  color: #ffffff;
 }
 h1 {
     text-align: right;
     font-family: proxima-nova, sans-serif;
     font-size: 5em;
-    color: #000000;
+    color: #ffffff;
 }
 h2 {
     text-align: left;
     font-family: proxima-nova, sans-serif;
     font-size: 2em;
-    color: #000000;
+    color: #ffffff;
 }
 h3 {
     text-align: left;
     font-family: proxima-nova, sans-serif;
     font-size: 2.5em;
-    color: #000000;
+    color: #ffffff;
 }
 h4 {
     text-align: left;
     font-family: proxima-nova, sans-serif;
     font-size: 2em;
-    color: #000000;
+    color: #ffffff;
 }
 h5 {
     text-align: left;
     font-family: proxima-nova, sans-serif;
     font-size: 1.5em;
-    color: #000000;
+    color: #ffffff;
 }
 h6 {
     text-align: left;
     font-family: proxima-nova, sans-serif;
     font-size: 1em;
-    color: #000000;
+    color: #ffffff;
 }
 p {
     text-align: left;
     font-family: proxima-nova, sans-serif;
     font-size: 1em;
-    color: #000000;
+    color: #ffffff;
 }
 ul {
     text-align: left;
     font-family: proxima-nova, sans-serif;
     font-size: 1em;
-    color: #000000;
+    color: #ffffff;
 }
 .wrapper {
     display: grid;
