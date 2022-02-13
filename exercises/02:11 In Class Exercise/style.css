@@ -1,0 +1,62 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  header {
+    height: 100vh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+p.title {
+  text-align: center;
+  font-size: 144px;
+  text-transform: uppercase;
+  /* border: 1px solid salmon; */
+  margin: 0mm;
+  line-height: 0.9;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -0.07em;
+  text-shadow: 9px 7px plum;
+  }
+
+  div.info {
+    /* border: 1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    padding: 20px;
+    background-image: url("https://aws-tiqets-cdn.imgix.net/images/content/7f0b20d020cd48248c67003bb81c3014.jpg?auto=format&fit=crop&ixlib=python-3.2.1&q=70&s=d3d50e3d89e9487c259cc8e49ca111c3");
+    background-size: cover;
+    height:100%;
+  }
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+h1 {
+  /* text-align: right; */
+  max-width: 50%;
+  text-transform: uppercase;
+  margin-left: auto;
+  font-size: 12mm;
+  color: white;
+  text-indent: -2em;
+  
+}
+
+article{
+  font-style: normal;
+  text-indent: 3mm;
+}
+
+.letter-d{
+  font-family: serif;
+}
+
+
