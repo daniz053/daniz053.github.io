@@ -1,0 +1,73 @@
+html {
+   font-family: 'Turret Road', cursive;
+   color: #FEEB00;
+  }
+  
+  header {
+    height: 100vh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+p.title-one {
+  text-align: left;
+  font-size: 160px;
+  text-transform: uppercase;
+  /* border: 1px solid salmon; */
+  margin: 0mm;
+  line-height: 0.9;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -0.07em;
+  /* text-shadow: 9px 7px rgb(0, 47, 255); */
+  }
+
+  p.title-two {
+    text-align: right;
+    font-size: 160px;
+    text-transform: uppercase;
+    /* border: 1px solid salmon; */
+    margin: 0mm;
+    padding-right: .3em;
+    line-height: 0.9;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -0.07em;
+    /* text-shadow: 9px 7px rgb(0, 47, 255); */
+    }
+
+  div.info {
+    /* border: 1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    padding: 20px;
+    background-image: url("https://f4.bcbits.com/img/a2891520234_10.jpg");
+    background-size: cover;
+    height:100%;
+  }
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+h1 {
+  /* text-align: right; */
+  max-width: 50%;
+  text-transform: uppercase;
+  margin-left: auto;
+  font-size: 12mm;
+  color: white;
+  text-indent: -2em;
+}
+
+article{
+  font-family: 'Turret Road';
+  font-weight:400;
+  text-indent: 3mm;
+}
+
+
