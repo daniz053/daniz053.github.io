@@ -1,0 +1,70 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    color:beige;
+    background-color:rgb(33, 21, 196);
+}
+.wrapper{
+    display: flex;
+    align-items:flex-start;
+    justify-content: left;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 1.7;
+    margin-bottom: 22px;
+    margin-top: 22px;
+    font-family: 'abc-favorit-extended', light;
+}
+a{
+    color: beige;
+    text-decoration-line: underline;
+    text-decoration:beige;
+    text-decoration-style: solid;
+    /* border: 1px solid; */
+}
+a:link { color: beige; text-decoration: none}
+a:visited { color: beige; text-decoration: none}
+a:hover { color: beige; text-decoration: underline}
+a:active { color: beige; text-decoration: none}
+                    
+@font-face {    font-family: 'abc-favorit-extended';
+    src: url('../assets/abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff');
+         url('../assets/abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff') format('woff'),
+         url('../assets/abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff2') format('woff2')
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {    font-family: 'abc-favorit-extended';
+    src: url('../assets/abc-favorit-extended/ABCFavoritExtended-Light-Trial.woff');
+         url('../assets/abc-favorit-extended/ABCFavoritExtended-Light-Trial.woff') format('woff'),
+         url('../assets/abc-favorit-extended/ABCFavoritExtended-Light-Trial.woff2') format('woff2')
+    font-weight: light;
+    font-style: normal;
+} 
+/* font-family: 'Turret Road', cursive; */
+h1{
+    font-family: 'abc-favorit-extended';
+    /* font-style: bold; */
+    font-size: 110px;
+    font-weight: 800px;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-right: 600px;
+    margin-top: 20px;
+}
+.border{
+    font-family: 'abc-favorit-extended';
+    font-size: 20px;
+    font-weight: light;
+    line-height: 0.8;
+    border-style: solid;
+    border-color: beige;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    padding: 6px;
+    border-radius: 20px;
+}

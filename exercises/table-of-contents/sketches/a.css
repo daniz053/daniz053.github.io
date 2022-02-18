@@ -1,0 +1,80 @@
+@font-face {    font-family: 'abc-favorit-extended';
+    src: url('../assets/abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff');
+         url('../assets/abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff') format('woff'),
+         url('../assets/abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff2') format('woff2')
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {    font-family: 'abc-favorit-extended';
+    src: url('../../assets/abc-favorit-extended/ABCFavoritExtended-Light-Trial.woff');
+         url('../../assets/abc-favorit-extended/ABCFavoritExtended-Light-Trial.woff') format('woff'),
+         url('../../assets/abc-favorit-extended/ABCFavoritExtended-Light-Trial.woff2') format('woff2')
+    font-weight: light;
+    font-style: normal;
+} 
+
+body{
+    color:beige;
+    background-color:rgb(33, 21, 196);
+    font-family: 'abc-favorit-extended';
+    font-size: 30px;
+}
+  
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+  }
+h1{
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    font-size: 30px;
+    line-height: 0.4;
+    letter-spacing: 10px;
+}
+h2{
+    font-size: 30px;
+    line-height: 0.4;
+    margin-left: 80px;
+}
+.heading {
+    font-size: 30px; 
+    font-weight: 600;
+    justify-content: center;
+  }
+  
+  .entries {
+    margin-bottom: 60px;
+    align-items: center;
+  }
+  
+  .heading {
+    margin-bottom: 40px;
+  }
+  
+  .chapter {
+    letter-spacing: 5px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    text-decoration-line:underline;
+    text-decoration-style: solid;
+    text-decoration-color: beige;
+    padding-bottom: 10px;
+  }
+  
+  p {
+    margin: 0;
+    line-height: 0.8;
+  }
+  
+  .page {
+    margin-top: 0px;
+    line-height: 1.4;
+  }
+  
+  
+  span {
+    display: block;
+  }
