@@ -1,0 +1,106 @@
+@font-face {    font-family: 'abc-favorit-extended';
+    src: url('../assets/abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff');
+         url('../assets/abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff') format('woff'),
+         url('../assets/abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff2') format('woff2')
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {    font-family: 'abc-favorit-extended';
+    src: url('../../assets/abc-favorit-extended/ABCFavoritExtended-Light-Trial.woff');
+         url('../../assets/abc-favorit-extended/ABCFavoritExtended-Light-Trial.woff') format('woff'),
+         url('../../assets/abc-favorit-extended/ABCFavoritExtended-Light-Trial.woff2') format('woff2')
+    font-weight: light;
+    font-style: normal;
+} 
+
+body{
+    color:beige;
+    background-color:rgb(33, 21, 196);
+    font-family: 'abc-favorit-extended';
+    font-size: 30px;
+}
+h1{
+    font-size: 30px;
+    line-height: 30px;
+    /* letter-spacing: 10px; */
+    font-style: oblique;
+    margin-top: 20%;
+}
+h2{
+    font-size: 80px;
+    line-height: 70px;
+    font-weight: bolder;   
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 30px;
+    text-align: left;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .heading {
+    font-size: 30px; 
+    font-weight: 600;
+    justify-content: left; 
+    /* margin: 0%; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: -10vh;
+  }
+  
+  .entries {
+    /* margin-bottom: 20px; */
+    align-items: left;
+    /* margin: %; */
+    border: aliceblue;
+    border-style:hidden;
+    border-width: .5vw;
+    border-radius: 25%;
+    padding: 1vh;
+    margin: 1vh;
+  }
+  
+  .chapter {
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin: 0%;
+    /* margin-bottom: 20%; */
+    font-weight: bold;
+  }
+  .description{
+    font-size: 25px;
+    /* margin-top: 10%; */
+    font-style: oblique;
+  }
+  .page{
+    font-size: 20px;
+    margin: 0%;
+    text-decoration-line:underline;
+    text-decoration-style: solid;
+    text-decoration-color: beige;
+    font-weight: bold;
+  }
+  .foot{
+    font-size: 30px;
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  a:link {
+    color: white;
+  }
+
+  a:visited {
+    color: white;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  a:active {
+    color: white;
+  }

@@ -1,0 +1,25 @@
+*
+body{
+    color:rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    font-family: 'abc-favorit';
+  }
+.h1 {
+    font-family: 'abc-favorit';
+    font-size:  3.03vh;
+    line-height: 1;
+}
+@font-face {    font-family: 'abc-favorit';
+    src: url('./abc-favorit/ABCFavoritExtended-Bold-Trial.otf');
+         url('./abc-favorit/ABCFavoritExtended-Bold-Trial.woff'') format('woff'),
+         url('./abc-favorit/ABCFavoritExtended-Bold-Trial.woff2'') format('woff2')
+    font-weight: normal;
+    font-style: normal;
+  } 
+  @font-face {    font-family: 'abc-favorit';
+    src: url('./abc-favorit/ABCFavoritExtended-Light-Trial.otf');
+         url('./abc-favorit/ABCFavoritExtended-Light-Trial.woff') format('woff'),
+         url('./abc-favorit/ABCFavoritExtended-Light-Trial.woff2') format('woff2')
+    font-weight: light;
+    font-style: normal;
+  } 
