@@ -7,7 +7,6 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-  font-size: calc(100vw / 45);
 }
 
 .title{
