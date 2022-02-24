@@ -23,7 +23,7 @@ body{
 .wrapper {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items:left;
     font-size: 30px;
   }
 h1{
@@ -42,14 +42,14 @@ h2{
 .heading {
     font-size: 30px; 
     font-weight: 600;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 40px;
   }
   
   .entries {
     margin-bottom: 60px;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
   }
   
   .chapter {
