@@ -22,11 +22,15 @@ body{
 h1{
     font-size: 30px;
     line-height: 30px;
+    justify-content: center; 
+    align-items: center;
     /* letter-spacing: 10px; */
 }
 h2{
     font-size: 30px;
     line-height: 30px;
+    justify-content: center; 
+    align-items: center;
 }
 .wrapper {
     display: flex;
@@ -41,8 +45,8 @@ h2{
   .heading {
     font-size: 30px; 
     font-weight: 600;
-    justify-content: left; 
-    margin: 0%;
+    text-align: center;
+    margin-top: 30%;
   }
   
   .entries {
@@ -50,15 +54,17 @@ h2{
     align-items: left;
     padding: 5%;
     margin: 0%;
+    border: aliceblue;
+    border-style: solid;
   }
   
   .chapter {
     letter-spacing: 2px;
     font-size: 30px;
     margin: 0%;
-    border: aliceblue;
+    /* border: aliceblue;
     border-style: solid;
-    border-radius: 60%;
+    border-radius: 60%; */
     padding: 1%;
     margin-bottom: 20%;
   }
@@ -73,4 +79,8 @@ h2{
     text-decoration-style: solid;
     text-decoration-color: beige;
   }
+  .foot{
+    margin-left: 10px;
+    grid-column: 2 / 4;
+    }
   
