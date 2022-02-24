@@ -1,14 +1,324 @@
-*
-body{
-    color:rgb(0, 0, 0);
-    background-color:rgb(255, 255, 255);
-    font-family: 'abc-favorit';
-  }
-.h1 {
-    font-family: 'abc-favorit';
-    font-size:  3.03vh;
-    line-height: 1;
+*body{
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-family: 'Manrope', sans-serif;
 }
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.heading-left{
+  grid-column: 1;
+  grid-row: 1;
+  content:url(https://www.danipujalte.com/wp-content/uploads/2022/02/8606103002927-R1-049-23-715x1080.jpg);
+  width: 150%;
+  z-index: 4;
+  margin-top: 10%;
+  margin-left: 30%;
+  position: relative;
+}
+.heading-left-yellow {
+  grid-column: 1;
+  grid-row: 1;
+  background-color:rgb(255, 196, 0) ;
+  width: 150%;
+  z-index: 1;
+  margin-top: 35%;
+  margin-left: 45%;
+  margin-bottom: 20%;
+  position: relative;
+}
+
+.heading-right {
+  grid-column: 5;
+  grid-row: 1;
+  content:url(https://www.danipujalte.com/wp-content/uploads/2022/02/8606103002950-R1-E004-1-810x1080.jpg);
+  width: 180%;
+  margin-top: 30%;
+  z-index: 3;
+  position: relative;
+}
+
+.heading-right-yellow {
+  grid-column: 5;
+  grid-row: 1;
+  background-color:rgb(255, 196, 0) ;
+  width: 180%;
+  margin-top: 15%;
+  margin-bottom: 30%;
+  margin-left: -15%;
+  z-index: 1;
+  position: relative;
+}
+.dani {
+  grid-column: 3 / 5;
+  grid-row: 2;
+  font-family: 'Libre Barcode 39 Text';
+  font-size: 70px;
+  color: rgb(255, 196, 0);
+  z-index: 4;
+  position: relative;
+  margin-top: -5%;
+  margin-left: 0%;
+}
+
+
+.title{
+  grid-column: 4 / 6;
+  grid-row: 1;
+  font-family: 'Manrope';
+  font-weight: bolder;
+  color: rgb(223, 153, 3);
+  text-align: left;
+  font-size: 100px;
+  margin-left: 0%;
+  margin-top: 5%;
+  margin-bottom: -40%;
+  line-height: 100%;
+}
+.subtitle{
+  grid-column: 5 / 7;
+  grid-row: 2;
+  font-family: 'Manrope';
+  /* font-style: oblique; */
+  color: rgb(223, 153, 3);
+  text-align: left;
+  font-size: 15px;
+  margin-top: 10%;
+  margin-left: 35%;
+}
+.second-page-bottom {
+  grid-column: 1;
+  grid-row: 2;
+  content:url(https://www.danipujalte.com/wp-content/uploads/2022/02/000002-16-810x1080.jpg);
+  width: 140%;
+  margin-left: 30%;
+  margin-top: -60%;
+  z-index: 1;
+  position: relative;
+}
+.second-page-top {
+  grid-column: 2;
+  grid-row: 1;
+  content:url(https://www.danipujalte.com/wp-content/uploads/2022/02/000001-16-1080x781.jpg);
+  width: 160%;
+  margin-top: 10%;
+  margin-left: 10%;
+  z-index: 3;
+  position: relative;
+}
+.second-page-right-bottom {
+  grid-column: 5;
+  grid-row: 4;
+  content:url(https://www.danipujalte.com/wp-content/uploads/2022/02/000001-17-810x1080.jpg);
+  width: 230%;
+  z-index: 3;
+  margin-top: 0%;
+  margin-left: -50%;
+  position: relative;
+}
+.second-page-right-top  {
+  grid-column: 4;
+  grid-row: 2;
+  content:url(https://www.danipujalte.com/wp-content/uploads/2022/02/000033-6-1080x715.jpg);
+  width: 250%;
+  z-index: 3;
+  margin-top: 35%;
+  margin-right: -20%;
+  position: relative;
+}
+.lyrics{
+  grid-column: 1 / 4;
+  grid-row: 4;
+  font-family: 'Manrope';
+  font-weight: medium;
+  color: rgb(223, 153, 3);
+  text-align: justify;
+  font-size: 100px;
+  margin-left: 10%;
+  margin-top: 10%;
+  z-index: 4;
+  line-height: 100%;
+ }
+.middle-bottom {
+  grid-column: 1;
+  grid-row: 7;
+  content:url(https://www.danipujalte.com/wp-content/uploads/2022/02/8606103002943-R1-032-14A-1080x715.jpg);
+  width: 300%;
+  z-index: 1;
+  position: relative;
+  margin-top: -40%;
+  margin-left: 40%;
+}
+.middle-top {
+  grid-column: 3;
+  grid-row: 7;
+  content:url(https://www.danipujalte.com/wp-content/uploads/2022/02/8606103002943-R1-030-13A-1080x715.jpg);
+  width: 300%;
+  z-index: 3;
+  margin-top: 90%;
+  margin-left: 50%;
+  position: relative;
+}
+.description-one{
+  grid-column: 1 / 4;
+  grid-row: 11;
+  font-family: 'Manrope';
+  font-weight: light;
+  color: rgb(223, 153, 3);
+  text-align: justify;
+  font-size: 25px;
+  margin-left: 12%;
+  margin-right: 15%;
+  margin-top: -15%;
+}
+.van{
+  grid-column: 4 / 7;
+  grid-row: 11;
+  content: url(http://www.danipujalte.com/wp-content/uploads/2022/02/000033-6-1080x715.jpg);
+  width: 100%;
+  margin-top: -12%;
+  margin-left: -10%;
+}
+.bottom-left {
+  grid-column: 2;
+  grid-row: 16;
+  content:url(https://www.danipujalte.com/wp-content/uploads/2022/02/000036-11-1080x716.jpg);
+  width: 250%;
+  z-index: 3;
+  position: relative;
+  margin-top: -40%;
+  margin-left: 10%;
+}
+.bottom-right {
+  grid-column: 4;
+  grid-row: 17;
+  content:url(https://www.danipujalte.com/wp-content/uploads/2022/02/8606103002927-R1-049-23-715x1080.jpg);
+  width: 250%;
+  z-index: 1;
+  margin-top: -150%;
+  margin-left: 35%;
+  position: relative;
+}
+.bottom-him-three{
+  grid-column: 1;
+  grid-row: 14;
+  width: 200%;
+  z-index: 0;
+  position: relative;
+  margin-bottom: -300px;
+  content:url(http://www.danipujalte.com/wp-content/uploads/2022/02/8606103002951-R1-E001-810x1080.jpg);
+}
+.bottom-her-one{
+  grid-column: 1;
+  grid-row: 18;
+  width: 200%;
+  z-index: 1;
+  position: relative;
+  margin-bottom: -300px;
+  margin-left: 40px;
+  content:url(http://www.danipujalte.com/wp-content/uploads/2022/02/8606103002949-R1-018-7A-712x1080.jpg);
+}
+.bottom-her-two{
+  grid-column: 3;
+  grid-row: 19;
+  width: 300%;
+  z-index: 0;
+  position: relative;
+  margin-bottom: 90px;
+  margin-left: -50px;
+  content:url(http://www.danipujalte.com/wp-content/uploads/2022/02/000033-8-1080x715.jpg);
+}
+.bottom-her-three{
+  grid-column: 5;
+  grid-row: 19;
+  width: 200%;
+  z-index: 0;
+  position: relative;
+  margin-top: -60px;
+  margin-left: -30px;
+  content:url(http://www.danipujalte.com/wp-content/uploads/2022/02/8606103002950-R1-E004-1-810x1080.jpg);
+}
+.video{
+  width: 100%;
+  height: 100%;
+  grid-row: 22;
+}
+iframe {
+  position: absolute;
+  top: 800%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+
+}
+.description-two{
+  grid-column: 4 / 7;
+  grid-row: 31;
+  font-family: 'Manrope';
+  font-weight: light;
+  line-height: 110%;
+  color: rgb(223, 153, 3);
+  text-align: justify;
+  font-size: 20px;
+  margin-left: 12%;
+  margin-right: 15%;
+  margin-top: 0%;
+}
+.family-photo{
+  grid-column: 1 / 3;
+  grid-row: 31;
+  width: 150%;
+  margin-left: 10%;
+  content:url(http://www.danipujalte.com/wp-content/uploads/2022/02/8606103003051-R1-075-36-1080x715.jpg);
+}
+.last{
+  grid-column: 1 / 6;
+  grid-row: 28;
+  font-family: 'Manrope';
+  font-weight: bold;
+  font-size: 250px;
+  color: rgb(223, 153, 3);
+  letter-spacing:-10px;
+  line-height: 200px;
+  text-align: justify;
+}
+/* .circle{
+  grid-column: 1;
+  grid-row: 13;
+  z-index: 2;
+  height: 300px;
+  width: 300px;
+  /* background-color: rgb(223, 153, 3); */
+  border-color:rgb(223, 153, 3);
+  border-width: 20%;
+  border-style: solid;
+  border-radius: 50%;
+  margin-bottom: -50px;
+  margin-left: 0%;
+} */
+
+
+a:link {
+  color: rgb(223, 153, 3);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(223, 153, 3);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(223, 153, 3);
+}
+
+/* selected link */
+a:active {
+  color: rgb(223, 153, 3);
+}
+
 @font-face {    font-family: 'abc-favorit';
     src: url('./abc-favorit/ABCFavoritExtended-Bold-Trial.otf');
          url('./abc-favorit/ABCFavoritExtended-Bold-Trial.woff'') format('woff'),
@@ -23,3 +333,4 @@ body{
     font-weight: light;
     font-style: normal;
   } 
+ 

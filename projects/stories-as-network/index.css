@@ -1,0 +1,203 @@
+body{
+    background-color: black;
+    color:beige;
+}
+.wrapper{
+    display: flex;
+  flex-direction: column;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+}
+.vector-one{
+position: absolute;
+background-color: black;
+border-style: solid;
+border-radius: 20px;
+color: rgb(255, 255, 255);
+grid-column-start: 1;
+grid-column-end: 5;
+}
+.vector-two{
+    position: absolute;
+    background-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    grid-column-start: 6;
+    grid-column-end: 10;
+    }
+.vector-one, .vector-two {
+    width:  50%;
+  }
+
+
+
+position: absolute;
+width: 0px;
+height: 1001px;
+left: 514px;
+top: -19px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 1 */
+
+/* Vector 2 */
+
+
+position: absolute;
+width: 0px;
+height: 806px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 3 */
+
+
+position: absolute;
+width: 0px;
+height: 809px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 4 */
+
+
+position: absolute;
+width: 0px;
+height: 809px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 5 */
+
+
+position: absolute;
+width: 0px;
+height: 985px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 16 */
+
+
+position: absolute;
+width: 511px;
+height: 0px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 145 */
+
+
+position: absolute;
+width: 511px;
+height: 0px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 144 */
+
+
+position: absolute;
+width: 511px;
+height: 0px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 143 */
+
+
+position: absolute;
+width: 511px;
+height: 0px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 146 */
+
+
+position: absolute;
+width: 0px;
+height: 806px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 147 */
+
+
+position: absolute;
+width: 0px;
+height: 806px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 148 */
+
+
+position: absolute;
+width: 0px;
+height: 809px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 149 */
+
+
+position: absolute;
+width: 0px;
+height: 809px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 151 */
+
+
+position: absolute;
+width: 511px;
+height: 0px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 152 */
+
+
+position: absolute;
+width: 511px;
+height: 0px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 153 */
+
+
+position: absolute;
+width: 511px;
+height: 0px;
+
+border: 3px solid #FFFFFF;
+
+
+/* Vector 154 */
+
+
+position: absolute;
+width: 511px;
+height: 0px;
+
+border: 3px solid #FFFFFF;
