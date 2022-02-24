@@ -15,7 +15,7 @@
 
 body{
     color:beige;
-    background-color:rgb(33, 21, 196);
+    background-color:rgb(124, 163, 236);
     font-family: 'abc-favorit-extended';
     font-size: 30px;
 }
@@ -39,15 +39,17 @@ h2{
     font-size: 30px;
     text-align: left;
     display: grid;
-    grid-template-rows: repeat(4, 3fr);
+    grid-template-rows: repeat(4, 4fr);
     grid-template-columns: repeat(4, 1fr);
   }
   .heading {
+    grid-column-start: 1;
+    grid-column-end: 5;
     font-size: 30px; 
     font-weight: 600;
     text-align: center;
-    margin-top: 30%;
-  }
+    margin-top: 10%;
+    }
   
   .entries {
     margin-bottom: 20px;
@@ -56,6 +58,7 @@ h2{
     margin: 0%;
     border: aliceblue;
     border-style: solid;
+    border-width: 1mm;
   }
   
   .chapter {
@@ -81,6 +84,6 @@ h2{
   }
   .foot{
     margin-left: 10px;
-    grid-column: 2 / 4;
+    grid-column: 1 / 4;
     }
   
