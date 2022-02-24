@@ -1,0 +1,91 @@
+
+body {
+    background-color: pink;
+    font-family: arial;
+    color: red;
+    font-size: 100px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .item {
+    text-align: center;
+    animation: spinType 5s;
+  }
+
+
+
+  @keyframes spinType {
+    0% {
+      transform: rotate(0.5turn);
+    }
+    60% {
+      transform: rotate(0.7turn);
+    }
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+  
+  @keyframes yinyangSpin {
+    0% {
+      transform: rotate(0turn);
+    }
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+  
+  @keyframes colorSwap {
+    0% {
+      fill: default;
+    }
+    100% {
+      fill: #6d79cd;
+    }
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  #yin-yang {
+    animation: yinyangSpin 5s ease-out infinite;
+    height:500px;
+  }
+  
+  #yin-yang path, #yin-yang circle {
+      /* first animation */
+    animation: colorSwap 5s ease-in infinite alternate, 
+    /* second animation */
+    fade 5s ease-in infinite alternate-reverse;
+  }
+  
+  #yin-yang:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  
+  /*basic animation, spins once in one second*/
+  div.item {
+    animation: spinType 1s;
+  }
+
+    /* you can have as many keyframes as you want, but it needs to have
+    0% and 100^ */
+    /* order of animation classes in css */
+    /* animation: [animation-name] [animation-duration] 
+    [animation-timing-function] [animation-delay] 
+    [animation-iteration-count] [animation-direction]
+    [animation-fill-mode] [animation-play-state]; */
