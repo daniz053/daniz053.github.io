@@ -334,18 +334,5 @@
   content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png);
 }
 
-@font-face {    font-family: 'abc-favorit';
-    src: url('./abc-favorit/ABCFavoritExtended-Bold-Trial.otf');
-         url('./abc-favorit/ABCFavoritExtended-Bold-Trial.woff'') format('woff'),
-         url('./abc-favorit/ABCFavoritExtended-Bold-Trial.woff2'') format('woff2')
-    font-weight: normal;
-    font-style: normal;
-  } 
-  @font-face {    font-family: 'abc-favorit';
-    src: url('./abc-favorit/ABCFavoritExtended-Light-Trial.otf');
-         url('./abc-favorit/ABCFavoritExtended-Light-Trial.woff') format('woff'),
-         url('./abc-favorit/ABCFavoritExtended-Light-Trial.woff2') format('woff2')
-    font-weight: light;
-    font-style: normal;
-  } 
+
  
