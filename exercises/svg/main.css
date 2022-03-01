@@ -1,91 +1,155 @@
-
 body {
-    background-color: pink;
+    background-color: rgb(0, 0, 0);
     font-family: arial;
-    color: red;
+    /* color: red; */
     font-size: 100px;
+    font-family: 'Grenze Gotisch', cursive;
+  }
+  h1{
+    font-size: 150px;
+    color: yellowgreen;
+    margin-top: 3%;
+  }
+  h2{
+    font-size: 100px;
+    color: yellowgreen;
+  }
+  .everything{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto)
+    margin: 0%;
+    z-index: 3;
+  }
+
+  .kiss{
+    display: grid;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    z-index: 1;
+    line-height: 120px;
+    margin-top: 0px;
+  }
+  .quickly{
+    display: grid;
+    position: relative;
+    grid-column: 4;
+    grid-row: 3;
+    z-index: 1;
+  }
+  h2 {
+    animation: color-change 5s infinite;
   }
   
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .item {
-    text-align: center;
-    animation: spinType 5s;
-  }
+
+.container-two{
+    display: grid;
+    position: relative;
+    grid-column: 4;
+    grid-row: 3;
+    margin: 0%;
+    z-index: 3;
+}
+
+.fka-twigs{
+    display: grid;
+    position: absolute;
+    grid-column: 1;
+    grid-row-start: 1;
+    margin-top: -42%;
+    z-index: 0;
+
+}
+#star{
+    display: grid;
+    position: relative;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    z-index: 3;
+    margin-top: -80%;
+    animation: spinType 3s infinite;
+}
+#star-two{
+    display: grid;
+    position: relative;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    z-index: 0;
+    margin-top: -150%;
+    animation: spinType 5s infinite;
+}
+#star-three{
+    display: grid;
+    position: relative;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 0;
+    margin-top: -60%;
+    animation: spinType 5s infinite;
+}
+
+
+#kiss-me{
+    display: grid;
+    position: relative;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 3;
+    margin-top: -100%; 
+    margin-left: 20%; 
+}
+#kiss-me-two{
+    display: grid;
+    position: relative;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    z-index: 3;
+    margin-top: -170%; 
+    margin-left: 0%; 
+    transform: rotate(45deg);
+}
+@keyframes colorChange {
+    0%{fill:#ff0000}
+    50%{fill:#000}
+    100%{fill: #ff0000}
+}
 
 
 
-  @keyframes spinType {
-    0% {
-      transform: rotate(0.5turn);
-    }
-    60% {
-      transform: rotate(0.7turn);
-    }
-    100% {
-      transform: rotate(1turn);
-    }
-  }
-  
-  @keyframes yinyangSpin {
-    0% {
-      transform: rotate(0turn);
-    }
-    100% {
-      transform: rotate(1turn);
-    }
-  }
-  
-  @keyframes colorSwap {
+@keyframes ColorSwap {
     0% {
       fill: default;
     }
+    20% {
+      fill: #ea00ff;
+    }
+    40% {
+      fill: #ff009d;
+    }
+    60% {
+      fill: #ff0000;
+    }
+    80% {
+      fill: #ff5e00;
+    }
     100% {
-      fill: #6d79cd;
+      fill: #f375e9;
     }
-  }
-  
-  @keyframes fade {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  #yin-yang {
-    animation: yinyangSpin 5s ease-out infinite;
-    height:500px;
-  }
-  
-  #yin-yang path, #yin-yang circle {
-      /* first animation */
-    animation: colorSwap 5s ease-in infinite alternate, 
-    /* second animation */
-    fade 5s ease-in infinite alternate-reverse;
-  }
-  
-  #yin-yang:hover {
-    animation-play-state: paused;
-    cursor: pointer;
-  }
-  
-  /*basic animation, spins once in one second*/
-  div.item {
-    animation: spinType 1s;
   }
 
-    /* you can have as many keyframes as you want, but it needs to have
-    0% and 100^ */
-    /* order of animation classes in css */
-    /* animation: [animation-name] [animation-duration] 
-    [animation-timing-function] [animation-delay] 
-    [animation-iteration-count] [animation-direction]
-    [animation-fill-mode] [animation-play-state]; */
+@keyframes spinType {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes color-change {
+    0% { color: yellowgreen; }
+    50% { color: yellow; }
+    100% { color: green; }
+  }
