@@ -15,11 +15,11 @@
   }
   @font-face {
     font-family: 'HoneyDemo';
-    src: url('./fonts./randomfonts./HoneyDemo-Light.eot');
-    src: url('./fonts./randomfonts./HoneyDemo-Light.eot?#iefix') format('embedded-opentype'),
-         url('./fonts./randomfonts./HoneyDemo-Light.woff') format('woff'),
-         url('./fonts./randomfonts./HoneyDemo-Light.ttf') format('truetype'),
-         url('./fonts./randomfonts./HoneyDemo-Light.svg#gooddogregular') format('svg');
+    src: url('/fonts/randomfonts/HoneyDemo-Light.eot');
+    src: url('/fonts/randomfonts/HoneyDemo-Light.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/randomfonts/HoneyDemo-Light.woff') format('woff'),
+         url('/fonts/randomfonts/HoneyDemo-Light.ttf') format('truetype'),
+         url('/fonts/randomfonts/HoneyDemo-Light.svg#gooddogregular') format('svg');
     font-weight: normal;
     font-style: normal;
   }  
