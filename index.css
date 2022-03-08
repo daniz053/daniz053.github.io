@@ -1,19 +1,27 @@
-
-
 @font-face {    font-family: 'abc-favorit-extended';
-  src: url('./abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff');
-       url('./abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff') format('woff'),
-       url('./abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff2') format('woff2')
-  font-weight: normal;
-  font-style: normal;
-} 
-@font-face {    font-family: 'abc-favorit-extended';
-  src: url('./abc-favorit-extended/ABCFavoritExtended-Light-Trial.woff');
-       url('./abc-favorit-extended/ABCFavoritExtended-Light-Trial.woff') format('woff'),
-       url('./abc-favorit-extended/ABCFavoritExtended-Light-Trial.woff2') format('woff2')
+  src: url('fonts/dinamofonts/ABCFavoritExtended-Light-Trial.woff') format('woff'),
+      url('fonts/dinamofonts/ABCFavoritExtended-Light-Trial.woff2') format('woff2');
+
   font-weight: light;
   font-style: normal;
 } 
+@font-face {
+  font-family: 'abc-favorit-extended';
+  src: url('fonts/dinamofonts/ABCFavoritExtended-Bold-Trial.woff') format('woff'),
+        url('fonts/dinamofonts//ABCFavoritExtended-Bold-Trial.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: normal;
+}
+@font-face {
+  font-family: 'HoneyDemo';
+  src: url('fonts/randomfonts/HoneyDemo-Light.otf') format('otf'),
+       url('fonts/randomfonts/HoneyDemo-Light.woff') format('woff'),
+        url('fonts/randomfonts/HoneyDemo-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 body{
   color:beige;
   background-color:rgb(0, 0, 0);
@@ -169,7 +177,6 @@ a:active { color: beige; text-decoration: none}
   line-height: 1;
   border-style: solid;
   border-color: beige;
-  font-family: ;
   padding:  1vh;
   border-radius:  3.03vh;
   width: 18vw;
@@ -191,26 +198,6 @@ a:active { color: beige; text-decoration: none}
   flex-direction: 3vh;
   margin: 3vh;
   text-align: center;
-}
-/* #social-media{
-    display: flex;
-    flex-direction: column;
-  }
-
- .instgram-one{
-  float: left;
-  height: 470px;
-  width: 23%;
-  /* padding: 0 10px; */
-  column-count: 4;
-  display: flex;
-  flex-direction: 2 column;
-  /* margin: 3vh; */
-  font-family: 'abc-favorit-extended';
-  font-size:  3.03vh;
-  font-weight: light;
-  display: flex;
-  flex-direction: 1vh;
 }
 .instgram-two{
   float: left;
@@ -265,6 +252,4 @@ a:active { color: beige; text-decoration: none}
   font-size: 10vh;
   margin-top: 10vh;
   margin-left: 5.75vh;
-} */
-
-
+} 
