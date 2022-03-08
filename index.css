@@ -20,7 +20,7 @@
         url('/fonts/randomfonts/HoneyDemo-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  font-display: normal;
 }
 body{
   color:beige;
