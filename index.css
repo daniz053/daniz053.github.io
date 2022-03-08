@@ -1,11 +1,5 @@
-@font-face {
-  font-family: 'Honey Demo';
-  src: url('./honey-demo-light/HoneyDemo-Light.woff') format('woff'),
-        url('./honey-demo-light/HoneyDemo-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
+
+
 @font-face {    font-family: 'abc-favorit-extended';
   src: url('./abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff');
        url('./abc-favorit-extended/ABCFavoritExtended-Bold-Trial.woff') format('woff'),

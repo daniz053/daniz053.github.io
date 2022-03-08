@@ -1,0 +1,10 @@
+
+body {
+    background-color: black;
+    margin: 0;
+  }
+  
+  model-viewer {
+    width: 80vw;
+    height: 80vh;
+  }

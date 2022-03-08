@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'CirrusCumulus';
+  src: url('fonts/CirrusCumulus.otf') format('otf'),
+        url('fonts/CirrusCumulus.ttf') format('ttf'),
+        url('fonts/CirrusCumulus.woff') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+  body{
+    background-color: black;
+    color:beige;
+    font-family: 'CirrusCumulus';
+    font-family: 'Sawarabi Mincho', serif;
+    display: grid;
+    font-family: source-han-serif-japanese, serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+.home{
+  font-family: source-han-serif-japanese, serif;
+  padding: 0px;
+  margin-top: 1.4vh;
+  margin-left: 2vw;
+  font-size: 8vw;
+  display: grid;
+    position: relative;
+    width: 5%; 
+    /* float: left; */
+    text-decoration: none;
+}
+hr {
+  height: 1px;
+  margin: 0px 0;
+  color: beige;
+}
+.a{
+  font-family: source-han-serif-japanese, serif;
+}
+div a {
+    text-decoration: none;
+    font-family: source-han-serif-japanese, serif;
+  }
+  a:link {
+    color: beige;
+    font-family: source-han-serif-japanese, serif;
+  }
+  a:visited {
+    color: beige;
+    font-family: source-han-serif-japanese, serif;
+  }
+  a:hover {
+    color: beige;
+    text-shadow: 0 0 20px beige;
+    font-family: source-han-serif-japanese, serif;
+  }
+  a:active {
+    color: beige;
+    font-family: source-han-serif-japanese, serif;
+  }
+.container{
+  display: grid;
+  grid-template-columns: 6;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  z-index: 1;
+}
+.audio{
+  grid-column: 4;
+  grid-row: 1;
+  margin-top: 45vh;
+  margin-right: 2vw;
+  z-index: 1;
+}
+.right{
+  grid-column: 4;
+  grid-row: 1;
+  width: 40vw;
+  text-align: justify;
+  margin-top: 55vh;
+  margin-right: -26vw;
+  z-index: 3;
+  text-shadow: 0 0 12px rgb(194, 194, 194);
+  text-rendering: optimizeLegibility;
+  display: inline-block;
+  animation-name: glow;
+  animation-duration: 7s;
+  animation-delay: 0s;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;
+  animation-play-state:running;
+}
+.arrow{
+  grid-column: 4;
+  grid-row: 1;
+  margin-top: 3vw;
+  z-index: 3;
+  font-size: 4vw;
+  color: beige;
+
+  animation-name: gloww;
+  animation-duration: 7s;
+  animation-delay: 0s;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;
+  animation-play-state:running;
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+    color: black;
+  }
+  50% {
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    color: black;
+  }
+  100% {
+    text-shadow: 0 0 18px beige;
+    color: beige;
+  }
+}
+@keyframes gloww {
+  0% {
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+    color: black;
+  }
+  50% {
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    color: black;
+  }
+  100% {
+    text-shadow: 0 0 18px beige;
+    color: beige;
+  }
+}
