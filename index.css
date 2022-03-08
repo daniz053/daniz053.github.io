@@ -13,15 +13,6 @@
   font-style: normal;
   font-display: normal;
 }
-/* @font-face {
-  font-family: 'HoneyDemo';
-  src: url('/fonts/randomfonts/HoneyDemo-Light.otf') format('otf'),
-       url('/fonts/randomfonts/HoneyDemo-Light.woff') format('woff'),
-        url('/fonts/randomfonts/HoneyDemo-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: normal;
-} */
 @font-face {
   font-family: 'HoneyDemo';
   src: url('./fonts./randomfonts./HoneyDemo-Light.eot');
