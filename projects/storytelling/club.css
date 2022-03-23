@@ -1,58 +1,58 @@
 css*
  header {
    text-align: right;
-   font-family: proxima-nova, sans-serif;
+   font-family: chandler-42-regular, sans-serif;
    font-size: 7.5em;
-   color: #ffffff;
+   color: #ff0000;
  }
  h1 {
      text-align: right;
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
      font-size: 5em;
-     color: #ffffff;
+     color: #ff0000;
  }
  h2 {
      text-align: left;
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
      font-size: 2em;
-     color: #ffffff;
+     color: #ff0000;
  }
  h3 {
      text-align: left;
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
      font-size: 2.5em;
-     color: #ffffff;
+     color: #ff0000;
  }
  h4 {
      text-align: left;
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
      font-size: 2em;
-     color: #ffffff;
+     color: #ff0000;
  }
  h5 {
      text-align: left;
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
      font-size: 1.5em;
-     color: #ffffff;
+     color: #ff0000;
  }
  h6 {
      text-align: center;
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
      font-size: 1em;
-     color: #ffffff;
+     color: #ff0000;
  }
  p {
      text-align: left;
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
      font-size: 1em;
      color: #ffffff;
  }
  body {
-   font-family: proxima-nova, sans-serif;
+   font-family: chandler-42-regular, sans-serif;
  }
  ul {
      text-align: left;
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
      font-size: 1em;
      color: #ffffff;
  }
@@ -61,46 +61,75 @@ css*
      grid-template-columns: repeat(3, 1fr);
      gap: 10px;
      grid-auto-rows: minmax(100px, auto);
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
      font-size: 7em;
      color: #ffffff;
    }
    .one {
      grid-column: 1 / 3;
      grid-row: 1;
-     font-size: 120%;
+     font-size: 12vw;
      color: #ffffff;
+     letter-spacing: -2vw;
+     margin-top: 10vh;
+     text-shadow: #f5f0a9 0 0 10px;
+     filter: glow(color=#f5f0a9,strength=3);
    }
    .two {
-     grid-column: 5;
+     grid-column: 3;
      grid-row: 1;
-     font-size: 120%;
+     font-size: 12vw;
      color: #ffffff;
+     letter-spacing: -2vw;
+     margin-top: 10vh;
+     text-shadow: #f5f0a9 0 0 10px;
+     filter: glow(color=#f5f0a9,strength=3);
    }
    .three {
-     grid-column: 2 / 4;
-     grid-row: 3 / 3;
-     font-size: 120%;
+     grid-column: 2;
+     grid-row: 2;
+     font-size: 12vw;
      color: #ffffff;
+     letter-spacing: -2vw;
+     text-align: center;
+     margin: auto;
+     padding: 1vw;
+     text-shadow: #f5f0a9 0 0 10px;
+     filter: glow(color=#f5f0a9,strength=8);
+
+     border: #ffffff;
+     border-style: solid;
+     border-radius: 60%;
+     width: 30vw;
+     height: 23vh;
+     box-shadow: #f5f0a9 0 0 10px;
    }
    .four {
      grid-column: 5;
-     grid-row: 4;
-     font-size: 120%;
+     grid-row: 2;
+     font-size: 12vw;
      color: #ffffff;
+     letter-spacing: -2vw;
+     text-shadow: #f5f0a9 0 0 10px;
+     filter: glow(color=#f5f0a9,strength=3);
    }
    .five {
      grid-column: 5;
-     grid-row: 5;
-     font-size: 120%;
+     grid-row: 3;
+     font-size: 12vw;
      color: #ffffff;
+     letter-spacing: -2vw;
+     text-shadow: #f5f0a9 0 0 10px;
+     filter: glow(color=#f5f0a9,strength=3);
    }
    .map {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 10px;
      grid-auto-rows: minmax(100px, auto);
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
+     text-shadow: #f5f0a9 0 0 10px;
+     filter: glow(color=#f5f0a9,strength=3);
      font-size: 7em;
      color: #ffffff;
    }
@@ -109,10 +138,12 @@ css*
      grid-row: 2;
    }
    .seven {
-     grid-column: 4;
-     grid-row: 3;
-     font-size: 50%;
+     grid-column: 20;
+     grid-row: 2;
+     font-size: 10vw;
      color: #ffffff;
+     letter-spacing: -2vw;
+     margin-top: 8vw;
    }
     .doyou {
      display: grid;
@@ -127,27 +158,58 @@ css*
    .do {
      grid-column: 1;
      grid-row: 2;
+     font-family: chandler-42-regular, sans-serif;
+     text-shadow: #f5f0a9 0 0 5px;
+     filter: glow(color=#f5f0a9,strength=3);
+     font-size: 28vw;
+     margin-top: -8vw;
+     margin-left: 2vw;
+     letter-spacing: -2vw;
    }
    .you {
-     grid-column: 1;
-     grid-row: 7;
+     grid-column: 2;
+     grid-row: 2;
      color: #ffffff;
+     font-family: chandler-42-regular, sans-serif;
+     text-shadow: #f5f0a9 0 0 5px;
+     filter: glow(color=#f5f0a9,strength=3);
+     font-size: 28vw;
+     margin-left: -60vw;
+     margin-top: -8vw;
+     letter-spacing: -2vw;
    }
    .feel {
      grid-column: 1;
-     grid-row: 12;
+     grid-row: 3;
+     font-family: chandler-42-regular, sans-serif;
+     text-shadow: #f5f0a9 0 0 5px;
+     filter: glow(color=#f5f0a9,strength=3);
+     font-size: 28vw;
+     margin-left: 2vw;
+     margin-top: -7vw;
+     letter-spacing: -3vw;
    }
    .anything {
-     grid-column: 1;
-     grid-row: 18;
+     grid-column: 2;
+     grid-row: 5;
+     width: 10vw;
+     margin-left: -40vw;
      color: #ffffff;
+     font-family: chandler-42-regular, sans-serif;
+     text-shadow: #f5f0a9 0 0 10px;
+     filter: glow(color=#f5f0a9,strength=3);
+     font-size: 10vw;
+     letter-spacing: -2vw;
+    
    }
    .choose {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 10px;
      grid-auto-rows: minmax(100px, auto);
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
+     text-shadow: #f5f0a9 0 0 5px;
+     filter: glow(color=#f5f0a9,strength=3);
      font-size: 15em;
      font-weight: bold;
      color: #ffffff;
@@ -166,10 +228,11 @@ css*
      grid-template-columns: repeat(3, 1fr);
      gap: 10px;
      grid-auto-rows: minmax(100px, auto);
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
      font-size: 2em;
      font-weight: bold;
-     color: #ffffff;
+     color: black;
+     margin-top: 3vh;
    }
    .dance {
      grid-column: 2;
@@ -178,13 +241,19 @@ css*
    .keep {
      grid-column: 3;
      grid-row: 5;
+     color: black;
+     font-family: chandler-42-regular, sans-serif;
+     text-shadow: #f5f0a9 0 0 10px;
+     filter: glow(color=#f5f0a9,strength=3);
    }
  .tweettwo {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 10px;
      grid-auto-rows: minmax(100px, auto);
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
+     text-shadow: #f5f0a9 0 0 5px;
+     filter: glow(color=#f5f0a9,strength=3);
      font-size: 2em;
      font-weight: bold;
      color: #ffffff;
@@ -202,7 +271,9 @@ css*
      grid-template-columns: repeat(3, 1fr);
      gap: 10px;
      grid-auto-rows: minmax(100px, auto);
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
+     text-shadow: #f5f0a9 0 0 5px;
+     filter: glow(color=#f5f0a9,strength=3);
      font-size: 15em;
      font-weight: bold;
      color: #ffffff;
@@ -215,13 +286,18 @@ css*
    .blink_me {
      animation: blinker 1.25s linear infinite;
      color: #ffffff;
-     font-family: proxima-nova, sans-serif;
+     font-family: chandler-42-regular, sans-serif;
+     text-shadow: #f5f0a9 0 0 5px;
+     filter: glow(color=#f5f0a9,strength=3);
      font-size: 13em;
      font-weight: bold;
      grid-column: 2;
      grid-row: 5;
+     margin-top: 7vw;
+     line-height: 9vw;
    }
-
+  
+  
    @keyframes blinker {
      50% {
        opacity: 0;
@@ -265,7 +341,7 @@ css*
  a:link {
    color: rgb(255, 255, 255); 
    background-color: transparent; 
-   text-decoration: text-decoration-line;
+   text-decoration: none;
  }
 
  a:visited {
