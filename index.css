@@ -5,9 +5,18 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+  font-family: 'abc-favorit-extended';
+  src: url('./fonts/dinamofonts/ABCFavoritExtended-Medium-Trial.ttf') format('truetype'),;
+  font-weight: 300;
+  font-style: normal;
+  font-display: normal;
+}
 body{
   color:beige;
   background-color:rgb(0, 0, 0);
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Honey Demo', sans-serif;
 }
 .wrapper {
   display: flex;
@@ -15,7 +24,7 @@ body{
   /* align-items: center; */
   /* font-size: 100px; */
   font-family: 'Honey Demo';
-  letter-spacing: 0vh;
+  letter-spacing: -10vh;
   margin: 0%;
 }
 .interaction {
@@ -24,11 +33,11 @@ body{
   font-size:  30.3vh;
   font-family: 'Honey Demo';
   letter-spacing: 0px;
-  line-height: 0.9;
-  margin: 0mm;
+  line-height: 0.75;
+  margin: 1vw;
   letter-spacing: -0.009vh;
 }
-.studio {
+/* .studio {
   text-align: start;
   line-height: 0.9;
   font-size:  30.3vh;
@@ -47,7 +56,7 @@ body{
   line-height: 0.9;
   margin: 0mm;
   letter-spacing: -0.009vh;
-}
+} */
 .zoey{
   float:inline-end;
   text-align: justify;
@@ -82,9 +91,9 @@ a:active { color: beige; text-decoration: none}
   font-family: 'Honey Demo';
   letter-spacing: 0px;
   line-height: 0.8;
-  margin-left: 25.15vh;
+  margin-left: 15.15vh;
   margin-top: 15mm;
-  width: 80vw;
+  width: 60vw;
   padding:  3.03vh;
 }
 .project-right{
@@ -94,32 +103,32 @@ a:active { color: beige; text-decoration: none}
   font-family: 'Honey Demo';
   letter-spacing: 0px;
   line-height: 0.8;
-  margin-left: 45.75vh;
-  width: 80vw;
+  margin-left: 35.75vh;
+  width: 60vw;
   padding:  3.03vh;
 }
                   
 .description-left {
-  font-family: 'abc-favorit-extended';
+  font-family: 'Raleway';
   font-size:  3.03vh;
   font-weight: light;
   line-height: 1;
   border-style: solid;
   border-color: beige;
-  margin-left: 25.15vh;
+  margin-left: 15.15vh;
   margin-bottom: 4.54vh;
   padding:  0.9vh;
   border-radius: 3.03vh;
   width: 60vw;
 }
 .description-right {
-  font-family: 'abc-favorit-extended';
+  font-family: 'Raleway';
   font-size:  3.03vh;
   font-weight: light;
   line-height: 1;
   border-style: solid;
   border-color: beige;
-  margin-left: 45.75vh;
+  margin-left: 35.75vh;
   margin-bottom: 4.54vh;
   padding:  1vh;
   border-radius:  3.03vh;
@@ -154,7 +163,7 @@ a:active { color: beige; text-decoration: none}
 .peer{
   display: flex;
   flex-direction: column;
-  font-family: 'abc-favorit-extended';
+  font-family: 'Raleway';
   font-size:  3.03vh;
   font-weight: light;
   line-height: 1;
@@ -191,7 +200,7 @@ a:active { color: beige; text-decoration: none}
   display: flex;
   flex-direction: 2 column;
   /* margin: 3vh; */
-  font-family: 'abc-favorit-extended';
+  font-family: 'Raleway';
   font-size:  3.03vh;
   font-weight: light;
   display: flex;
@@ -206,7 +215,7 @@ a:active { color: beige; text-decoration: none}
   display: flex;
   flex-direction:  3 column;
   /* margin: 3vh; */
-  font-family: 'abc-favorit-extended';
+  font-family: 'Raleway';
   font-size:  3.03vh;
   font-weight: light;
   display: flex;
@@ -221,14 +230,14 @@ a:active { color: beige; text-decoration: none}
   display: flex;
   flex-direction:  4 column;
   /* margin: 3vh; */
-  font-family: 'abc-favorit-extended';
+  font-family: 'Raleway';
   font-size:  3.03vh;
   font-weight: light;
   display: flex;
   flex-direction: 4vh;
 } 
 .thank-you{
-  font-family: 'abc-favorit-extended';
+  font-family: 'Raleway';
   font-size:  3.03vh;
   font-weight: light;
   font-style: oblique;
