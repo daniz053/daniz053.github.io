@@ -1,4 +1,10 @@
 
+  @font-face {
+    font-family: F16;
+    src: url("./fonts/randomfonts/HoneyDemo-Light.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 body{
   color:beige;
   background-color:rgb(0, 0, 0);
