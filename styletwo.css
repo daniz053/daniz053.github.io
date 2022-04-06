@@ -1,0 +1,140 @@
+*  body {
+    background-color: #fff;
+    margin: 0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+  }
+  
+  ul {
+    padding-left: 6px;
+    list-style: none;
+    font-size: 1em;
+    margin-top: 0;
+  }
+
+  .name{
+    padding-left: 0px;
+    min-width: 50%;
+    height: 2vw;
+    font-size: 1.5em;
+    text-align: left;
+    line-height:  1em;
+
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-right-color: black;
+    border-right-style: solid;
+    border-width: 1px;
+
+}
+  .container {
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 0px;
+    font-weight: 400;
+    
+  }
+#marquee{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1vh;
+    white-space: nowrap;
+    min-width: 100%;
+}
+  
+  .header {
+    min-width: 50%;
+    height: 2vw;
+    font-size: 2em;
+    text-align: center;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-width: 1px;
+    font-weight: 400;
+  }
+  
+  .container > * {
+    padding: 16px;
+  }
+  .sidebar{
+    border-right-color: black;
+    border-right-style: solid;
+    border-width: 1px;
+    padding-left: 1em;
+  }
+  
+  @media (max-width: 800px) {
+    .container {
+      grid-template-columns: none;
+    }
+  }
+.title{
+    font-size: 10px;
+}
+.project{
+    font-size: 1.5em;
+}
+.description{
+    margin: 1em;
+}
+
+p{
+ font-size: .5em;
+ width: 40vw;
+}
+
+.classmates{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    border-top-color: black;
+    border-top-style: solid;
+    border-width: 1px;
+}
+.footer {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    border-top-color: black;
+    border-top-style: solid;
+    border-width: 1px;
+
+    font-style:oblique;
+    font-weight: 100;
+  }
+
+.classmates-links{
+    font-size: 10px;
+    float: left;
+}
+.student-links{
+    display: block;
+    font-size: 20px;
+}
+
+  a:link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(133, 133, 133);
+    text-decoration: solid;
+  }
+  a:active {
+    color: black;
+    text-decoration: none;
+  }
+  a:active {
+    color: black;
+    text-decoration: none;
+  }
+  

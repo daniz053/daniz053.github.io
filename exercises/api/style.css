@@ -1,0 +1,39 @@
+html {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: red;
+}
+
+body {
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 6rem 1rem;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+  margin-bottom: 2.25rem;
+}
+
+span {
+  text-decoration: line-through;
+  color: rgb(0, 0, 0);
+}
+
+.heading {
+  font-size: 2em;
+  text-transform: uppercase;
+  padding-bottom: 3vh;
+  text-align: left;
+}
+
+.key {
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 1.5vh;
+  border: 1px solid white;
+  width: fit-content;
+  margin-bottom: 10vh;
+}
