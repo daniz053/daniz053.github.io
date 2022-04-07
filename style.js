@@ -1,3 +1,5 @@
+console.log(window.innerWidth)
+
 TargetDate = "06/31/2021 9:00 AM";
   //BackColor = "palegreen";
   //ForeColor = "navy";
