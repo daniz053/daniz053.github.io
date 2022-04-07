@@ -13,10 +13,10 @@ body {
 
 .container {
   z-index: 0;
-  display:  flex;
+  display:  grid;
   font-family: 'Lora', serif;
   font-weight: bolder;
-  font-size:  10vw;
+  font-size:  40px;
   line-height: 15vh;
   align-items: center;
   justify-content: center;
@@ -32,7 +32,8 @@ body {
 }
 .container-two {
   z-index: 0;
-  display:  flex;
+  display: grid;
+  flex-direction: column-reverse;
   font-family: 'Lora', serif;
   font-weight: bolder;
   font-size:  20px;
