@@ -61,7 +61,7 @@ function draw() {
       translate(random(width), random(height));
       rotate(random(5 * HALF_PI));
       textSize(20);
-      text(input.value(), 20, 0);
+      text(input.value(), 10, 0);
       pop();
     }
 
