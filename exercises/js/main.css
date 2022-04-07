@@ -6,11 +6,70 @@ body {
   justify-content: center;
   /* This centers our sketch vertically. */
   align-items: center;
+  background-image: url(https://www.gannett-cdn.com/presto/2019/06/03/PNJM/aa3e1a6d-53fa-4528-b694-dcbfe5abe601-woodastocckkk.jpg?auto=webp&crop=1023,578,x0,y200&format=pjpg&width=1200);
 }
 
 /* i'm using the z index to move the slider on top of the container */
+
 .container {
   z-index: 0;
+  display:  flex;
+  font-family: 'Lora', serif;
+  font-weight: bolder;
+  font-size:  10vw;
+  line-height: 15vh;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  letter-spacing: 1px;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow:
+    0 0 10px rgb(255, 150, 150),
+    0 0 12px rgb(255, 0, 0),
+    0 0 32px rgb(255, 0, 0),
+    0 0 52px rgb(255, 0, 0);
+}
+.container-two {
+  z-index: 0;
+  display:  flex;
+  font-family: 'Lora', serif;
+  font-weight: bolder;
+  font-size:  20px;
+  line-height: 4vh;
+  align-items: center;
+  justify-content:space-evenly;
+  letter-spacing: 1px;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgb(197, 195, 195); */
+  border-radius: 50%;
+  width: 32vw;
+  height: 10vh;
+  padding: 1vw;
+  animation: flicker 1.5s infinite alternate;     
+}
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+    0 0 10px rgb(255, 150, 150),
+    0 0 12px rgb(255, 0, 0),
+    0 0 32px rgb(255, 0, 0),
+    0 0 52px rgb(255, 0, 0);
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 
 .slider {
