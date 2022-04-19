@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Queer Print Archives</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </script>
+    <style>
+      body {
+  font-family: "Kulture";
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: red;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Random Print Archive</a>
+  <a href="#">About</a>
+</div>
+<img class="nav" src="assets/hamburger.svg" alt="hamburger nav bar" onclick="openNav()">
+ <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> --> 
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+<body>
+<div class="wrapper">
+<div class="credits">
+  <marquee>Archive Collection by Alex Soukakos / Web Design by Zoey Poole</marquee>
+</div>
+
+
+<div class="title">The Queer Eroticism <br>Print Archives</div>
+<div class="gif"><img src="assets/archives.gif" style="width: 33vw;"></div>
+<div class="description">Welcome to The Queer Print Archives, a collection of 
+  archived adult magazines for queer men. This collection, archived by Alex Soukakos, 
+  and interactively designed by Zoey Poole, is a part of their Interaction creative coding class. 
+  Please scroll down to explore the prints.</div>
+
+<div class="break">
+<center>
+  <img src="assets/break.jpg"  style="width:70%; height:auto">
+</center>
+</div>
+
+<div class="filter-title">
+  Please choose from the list of options below to organize the archives.
+</div>
+
+<div class="filter-description">
+Data archives have been made possible in part with Are.na members and community boards.
+</div>
+
+<div class="brand">Brand</div>
+<div class="year-published">Date Published</div>
+<div class="covers">Cover Names</div>
+<div class="covers-images">Covers</div>
+</div>
+
+<div class="data_cards">
+  <div class="data_display">
+    <div id="data_imgs" width="20%" height="auto"></div>
+    <div id="data_printCovers"></div>
+    <div id="data_brand"></div>
+    <div id="data_datePublished"></div>
+  </div>
+</div>
+
+<script src="style.js"></script>
+  <script src="lib/airtable.browser.js"></script>
+
+
+  </body>
+  </html>

@@ -6,7 +6,7 @@
   }
   
   ul {
-    padding-left: 6px;
+    padding-left: 0.423728813559322vw;
     list-style: none;
     font-size: 1em;
     margin-top: 0;
@@ -24,7 +24,7 @@
     border-bottom-style: solid;
     border-right-color: black;
     border-right-style: solid;
-    border-width: 1px;
+    border-width:  0.07062146892655367vw;
 
 }
   .container {
@@ -33,7 +33,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-gap: 0px;
+    grid-gap: 0vw;
     font-weight: 400;
     
   }
@@ -55,17 +55,17 @@
     grid-column-end: -1;
     border-bottom-color: black;
     border-bottom-style: solid;
-    border-width: 1px;
+    border-width: 0.07062146892655367vw;
     font-weight: 400;
   }
   
   .container > * {
-    padding: 16px;
+    padding: 1.1299435028248588vw;
   }
   .sidebar{
     border-right-color: black;
     border-right-style: solid;
-    border-width: 1px;
+    border-width: 0.07062146892655367vw;
     padding-left: 1em;
   }
   
@@ -75,7 +75,7 @@
     }
   }
 .title{
-    font-size: 10px;
+    font-size: 0.7062146892655368vw;
 }
 .project{
     font-size: 1.5em;
@@ -98,7 +98,7 @@ p{
     border-right-style: solid;
     border-top-color: black;
     border-top-style: solid;
-    border-width: 1px;
+    border-width: 0.07062146892655367vw;
     padding-left: 1em;
   }
 .days{
@@ -110,23 +110,23 @@ p{
     border-right-style: solid;
     border-top-color: black;
     border-top-style: solid;
-    border-width: 1px;
+    border-width: 0.07062146892655367vw;
     padding-left: 1em;
 }
 .main-two{
     border-top-color: black;
     border-top-style: solid;
-    border-width: 1px;
+    border-width: 0.07062146892655367vw;
 }
 span#cntdwn {
     display: flex;
     color: black;
-    width: 144px;
-    line-height: 144px;
+    width: 10.169491525423728vw;
+    line-height: 10.169491525423728vw;
     vertical-align: middle;
     text-align: center;
     font-size: 4em;
-    border-width: 1px;
+    border-width: 0.07062146892655367vw;
   }
 
 .footer {
@@ -135,7 +135,7 @@ span#cntdwn {
     grid-column-end: -1;
     border-top-color: black;
     border-top-style: solid;
-    border-width: 1px;
+    border-width: 0.07062146892655367vw;
 
     font-style:oblique;
     font-weight: 100;
@@ -158,4 +158,6 @@ span#cntdwn {
     color: black;
     text-decoration: none;
   }
+
+  
   

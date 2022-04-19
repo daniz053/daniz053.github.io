@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "Kulture";
+    src: url('./assets/fonts/kaotizm-regular.woff') format('woff');
+    /* src: url('./assets/fonts/kaotizm-italik.woff') format('woff');  */
+    src: url('./assets/fonts/kaotizm-bold.woff') format('woff');
+    /* src: url('./assets/fonts/kaotizm-bold-italic.woff') format('woff'); */
+}
+@font-face {
+    font-family: "Kulture Italic";
+    src: url('./assets/fonts/kaotizm-italik.woff') format('woff'); 
+    src: url('./assets/fonts/kaotizm-bold-italic.woff') format('woff');
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: "Kulture";
+    font-family: 'Inter', sans-serif;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 2vw;
+    margin-top: 0;
+  }
+  .nav {
+    width: 3vw;
+    height: 5vh;
+
+    /* position:fixed */
+  }
+
+.credits{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    height: 4.7vh;
+    margin-top: -3vh;
+
+
+    font-size: 2vw;
+    font-family: "Kulture";
+    border-bottom: black;
+    border-bottom-style: solid;
+    
+} 
+
+.title{
+    font-size: 12.2vw;
+    font-family: "Kulture";
+    font-style: normal;
+    line-height: 18.7vh;
+    grid-column: 1 / 4;
+    grid-row: 2;
+    z-index: 1;
+    /* margin-left: 2vw; */
+    margin-right: 15vw;
+    margin-top: -8vh;
+    
+}
+.description{
+    font-family: 'Inter';
+    font-size: 1.25vw;
+    grid-column: 1 / 4;
+    grid-row: 3;
+    text-align: justify;
+
+    margin-top: 1vh;
+    margin-right: 16vw;
+    /* margin-left: 2vw; */
+
+}
+.gif{
+    grid-column: 3;
+    grid-row: 1;
+    width: 1vw;
+    height: 1vh;
+  
+    margin-left: 14vw;
+    margin-top: 3vh;
+}
+.break{
+    grid-column: 1 / -1;
+    grid-row: 5 / 7;
+    background-color: black;
+    /* margin: 1vw; */
+}
+.break img  {
+    grid-column: 1 / -1;
+    margin: 7vw;
+    filter: blur(5px)
+  }
+.break img:hover  {
+    grid-column: 1 / -1;
+    margin: 7vw;
+    filter: blur(0);
+}
+
+.filter-title{
+    grid-column: 1 / -1;
+    grid-row: 8;
+    font-size: 5.5vw;
+    font-family: "Kulture";
+    font-style: normal;
+    /* margin: 1vw; */
+}
+.filter-description{
+    grid-column: 1 / -1;
+    grid-row: 9;
+    font-size: 2vw;
+    font-family: 'Inter';
+    font-weight: lighter;
+}
+.covers-images{
+    grid-column: 1;
+    grid-row: 10;
+
+    font-family: 'Inter';
+    font-size: 2vw;
+    border: black;
+    border-radius: 5vw;
+    border-style: solid;
+    text-align: center;
+    height: 5vh;
+    width: 10vw;
+    
+}
+.covers{
+    grid-column: 2;
+    grid-row: 10;
+
+    font-family: 'Inter';
+    font-size: 2vw;
+    border: black;
+    border-radius: 5vw;
+    border-style: solid;
+    text-align: center;
+    height: 5vh;
+    width: 18vw;
+    margin-left: -3vw;
+}
+.brand{
+    grid-column: 3;
+    grid-row: 10;
+
+    font-family: 'Inter';
+    font-size: 2vw;
+    border: black;
+    border-radius: 5vw;
+    border-style: solid;
+    text-align: center;
+    height: 5vh;
+    width: 10vw;
+    margin-left: 2vw;
+}
+.year-published{
+    grid-column: 4;
+    grid-row: 10;
+
+    font-family: 'Inter';
+    font-size: 2vw;
+    border: black;
+    border-radius: 5vw;
+    border-style: solid;
+    text-align: center;
+    height: 5vh;
+    width: 20vw;
+}
+img {
+    margin-left: 2vh;
+    width: 20vw;
+    height: auto;
+  }
+.data_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow:wrap;
+  }
+.data_display {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    /* align-content: space-between; */
+
+    width: 70vw;
+    font-family: 'Inter';
+    font-size: 2vw;
+  } 
+.data_imgs{
+    margin-top: auto;
+} 
+.data_printCovers{
+    margin-top: auto;
+}
+.data_brand{
+    margin-top: auto;
+}
+.data_datePublished{
+    margin-top: auto;
+}
+  

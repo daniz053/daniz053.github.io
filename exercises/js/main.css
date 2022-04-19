@@ -29,6 +29,7 @@ body {
     0 0 12px rgb(255, 0, 0),
     0 0 32px rgb(255, 0, 0),
     0 0 52px rgb(255, 0, 0);
+
 }
 .container-two {
   z-index: 0;
@@ -48,7 +49,8 @@ body {
   width: 32vw;
   height: 10vh;
   padding: 1vw;
-  animation: flicker 1.5s infinite alternate;     
+  animation: flicker 1.5s infinite alternate;   
+  
 }
 @keyframes flicker {
     
