@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Kulture";
+    src: url('./assets/fonts/kaotizm-regular.woff') format('woff');
+    /* src: url('./assets/fonts/kaotizm-italik.woff') format('woff');  */
+    src: url('./assets/fonts/kaotizm-bold.woff') format('woff');
+    /* src: url('./assets/fonts/kaotizm-bold-italic.woff') format('woff'); */
+}
+@font-face {
+    font-family: "Kulture Italic";
+    src: url('./assets/fonts/kaotizm-italik.woff') format('woff'); 
+    src: url('./assets/fonts/kaotizm-bold-italic.woff') format('woff');
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: "Kulture";
+    font-family: 'Inter', sans-serif;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.wrapper-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 2vw;
+    margin-top: 0;
+  }
+  .nav {
+    width: 3vw;
+    height: 5vh;
+  }
+  .nav:hover{
+    cursor: pointer;
+  }
+.title{
+    font-size: 12.2vw;
+    font-family: "Kulture";
+    font-style: normal;
+    line-height: 18.7vh;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin-right: 15vw;
+    margin-top: 2vh; 
+}
+.gif{
+    grid-column: 3;
+    grid-row: 1;
+    width: 1vw;
+    height: 1vh;
+  
+    margin-left: 12vw;
+    margin-top: -3vh;
+}
+.description{
+    font-family: 'Inter';
+    font-size: 1.25vw;
+    grid-column: 1 / 4;
+    grid-row: 4;
+    text-align: justify;
+
+    margin-top: 0vh;
+    margin-right: 16vw;
+}

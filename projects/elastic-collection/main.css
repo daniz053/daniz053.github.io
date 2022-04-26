@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Kulture";
+    src: url('./assets/fonts/kaotizm-regular.woff') format('woff');
+    /* src: url('./assets/fonts/kaotizm-italik.woff') format('woff');  */
+    src: url('./assets/fonts/kaotizm-bold.woff') format('woff');
+    /* src: url('./assets/fonts/kaotizm-bold-italic.woff') format('woff'); */
+}
+@font-face {
+    font-family: "Kulture Italic";
+    src: url('./assets/fonts/kaotizm-italik.woff') format('woff'); 
+    src: url('./assets/fonts/kaotizm-bold-italic.woff') format('woff');
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: "Kulture";
+    font-family: 'Inter', sans-serif;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.wrapper-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 2vw;
+    margin-top: 0;
+  }
+  .nav {
+    width: 3vw;
+    height: 5vh;
+    background-color: white;
+  }
+  .nav:hover{
+    cursor: pointer;
+  }
+
+.credits{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    height: 4.7vh;
+    margin-top: -3vh;
+
+
+    font-size: 2vw;
+    font-family: "Kulture";
+    border-bottom: black;
+    border-bottom-style: solid;
+    
+} 
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 2vw;
+  }
+.title{
+  font-size: 7vw;
+  grid-column: 1 / -1;
+    grid-row: 2;
+    font-family: "Kulture";
+    margin-left: 4vw;
+}
+.printcoverContainer{
+    border-radius: 25px;
+    background-color: black;
+    display: inline-block;
+    flex-basis: auto;
+    margin: 1vw;
+    font-family: 'Inter';
+}
+.printcoverAttachments {
+    max-width: 30vw;
+    height: auto;
+    margin-top: 3vh;
+    margin-left: 1.7vw;
+    height: 50vh;
+    width: 18vw;
+  }
+  .printcover{
+    margin-left: 2vw;
+    font-size: 17px;
+    height: 1vh;
+    font-weight:200;
+    color: white;
+}
+.datepublished{
+    margin-left: 2vw;
+    font-size: 17px;
+    height: 1vh;
+    font-weight:200;
+    color: white;
+}
+.value{
+    margin-left: 2vw;
+    font-size: 17px;
+    height: 3vh;
+    font-weight:200;
+    color: white;
+}
+
+button#myBtn{
+  /* display: block; */
+  align-self: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  text-transform: lowercase;
+  font-size: 20px;
+  margin-top: 10vh;
+  top: 50%;
+transform: translatex(325%);
+}
+
+
+button#myBtn:hover {
+/*border-bottom: 1px solid;*/
+cursor: pointer;
+background-color: black !important;
+color: white;
+transition: all 100ms ease-in-out;
+}
+.signature{
+  font-family: 'Inter';
+  font-size: 15px;
+  font-style: oblique;
+  text-align: center;
+  color: grey;
+  margin-top: 5vw;
+  margin-bottom: 2vw;
+}
+

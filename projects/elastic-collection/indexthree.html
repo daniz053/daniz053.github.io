@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Queer Print Archives</title>
+  <link rel="icon" href="assets/foldericon.png">
+  <link rel="stylesheet" type="text/css" href="styletwoo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </script>
+    <style>
+      body {
+  font-family: "Kulture";
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: red;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="indextwo.html">Full Archive</a>
+</div>
+<img class="nav" src="assets/hamburger.svg" alt="hamburger nav bar" onclick="openNav()">
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</head>
+
+<body>
+
+<div class="wrapper-main">
+    <div class="title">About Our Project</div>
+    <div class="gif"><img src="assets/alexandi.png" style="width: 35vw;"></div>
+    <div class="description">
+        This project was completed through Parson’s Core Interaction 2 
+        creative coding class. We were asked to collect, or create, a collection of 
+        50 to 100 items. Our collections needed to include at least five different data 
+        type affiliated with it. Additionally, we required to have a visual consistency between 
+        the items collected. From there, we were asked to trade our collections with an assigned classmate. 
+        Through this, we designed a website for our partner’s collection connected to the API. 
+        Through this experience, our goal was to make use of an API to design, and build an engaging 
+        and cohesive data visual. 
+    </div>
+</div>

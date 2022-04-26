@@ -1,90 +1,199 @@
-const div1 = document.getElementById("data_brand");
-const div2 = document.getElementById("data_datePublished");
-const div3 = document.getElementById("data_printCovers");
-const div4 = document.getElementById("data_imgs");
+console.log("hi there");
+let wrapper = document.querySelector(".wrapper");
 
-async function getPeople() {
-  const response = await fetch(
-    "https://api.airtable.com/v0/appi4i01ehJf6jzVP/Table%201?api_key=keyOInlFujAUpPC0f"
-  );
-  const data = response.json();
-  return data;
+var Airtable = require('airtable');
+var base = new Airtable({ apiKey: "keyOInlFujAUpPC0f" }).base(
+  "appi4i01ehJf6jzVP"
+);
+
+
+// get our collection base, select all the records
+// specify functions that will receive the data
+base("elastic")
+  .select({})
+  .eachPage(gotPageOfPrintcovers, gotAllPrintcovers);
+
+// an empty array to hold our data
+var printcovers = [];
+
+// callback function that receives our data
+function gotPageOfPrintcovers(records, fetchNextPage) {
+  console.log("gotPageOfPrintcovers()");
+  // add the records from this page to our array
+  printcovers.push(...records);
+  // request more pages
+  fetchNextPage();
 }
 
-getPeople().then((data) => {
-  makeList(data.records);
-});
+// call back function that is called when all pages are loaded
+function gotAllPrintcovers(err) {
+  console.log("gotAllPrintcovers()");
 
-function makeList(records) {
-  console.log(`making list of ${records.length} records...`);
+  // report an error, you'd want to do something better than this in production
+  if (err) {
+    console.log("error loading data");
+    console.error(err);
+    return;
+  }
 
-  for (let i = 0; i < records.length; i++) {
-    const recordField = records[i].fields;
-    const attachments = recordField.Attachments;
+  // call functions to log and show the books
+  consoleLogPrintcovers();
+  showPrintcovers();
+}
 
-    if (attachments) {
-      const listItem1 = document.createElement("div");
-      const listItem2 = document.createElement("div");
-      const listItem3 = document.createElement("div");
-      const listItem4 = document.createElement("div");
 
-      listItem1.appendChild(composeText(recordField.Brand));
-      listItem2.appendChild(composeText(recordField.DatePublished));
-      listItem3.appendChild(composeText(recordField.PrintCovers));
-      listItem4.appendChild(composeImage(attachments));
+function consoleLogPrintcovers() {
+  console.log("consoleLogPrintcovers()");
+  printcovers.forEach(printcover => {
+    console.log("Printcovers:", printcover);
+  });
+}
 
-      div1.appendChild(listItem1);
-      div2.appendChild(listItem2);
-      div3.appendChild(listItem3);
-      div4.appendChild(listItem4);
+
+function showPrintcovers() {
+  console.log("showPrintcovers()");
+  printcovers.forEach((printcover) => {
+    
+
+
+    let printcoverContainer = document.createElement("div");
+    printcoverContainer.classList.add("printcoverContainer");
+    wrapper.appendChild(printcoverContainer);
+
+    let attachmentsHolder = document.createElement("img");
+    if ( printcover.fields.attachments ) {
+      console.log('test', printcover.fields.attachments);
+      attachmentsHolder.src = printcover.fields.attachments[0].url;
+      attachmentsHolder.classList.add("printcoverAttachments");
+      printcoverContainer.appendChild(attachmentsHolder);
     }
+
+    let printcoverBrand = document.createElement("h1");
+    printcoverBrand.classList.add("printcover");
+    printcoverBrand.innerText = "Brand: " + printcover.fields.brand;
+    printcoverContainer.appendChild(printcoverBrand);
+
+    let printcoverDatepublished = document.createElement("p");
+    printcoverDatepublished.classList.add("datepublished");
+    printcoverDatepublished.innerText = "Year Published: " + printcover.fields.datepublished;
+    printcoverContainer.appendChild(printcoverDatepublished);
+
+    let printcoverValue = document.createElement("p");
+    printcoverValue.classList.add("value");
+    printcoverValue.innerText = "Value: $" + printcover.fields.value;
+    printcoverContainer.appendChild(printcoverValue);
+
+  });
+    
+    // clean up names of tags to be lower case without spaces
+    let datepublished = printcover.fields.datepublished;
+    datepublished.forEach(function(datepublished) {
+      let datepublishedClassName = slugify(datepublished);
+      console.log('datepublishedClassName', datepublishedClassName);
+      attachmentsHolder.classList.add(datepublishedClassName);
+    });
+
+      }
+    
+
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+const elts = {
+  text1: document.getElementById("text1"),
+  text2: document.getElementById("text2")
+};
+
+const texts = [
+  "Click",
+  "Here",
+  "To",
+  "Visit",
+  "The",
+  "Queer",
+  "Eroticism",
+  "Print",
+  "Archives"
+];
+
+const morphTime = 1;
+const cooldownTime = 0.25;
+
+let textIndex = texts.length - 1;
+let time = new Date();
+let morph = 0;
+let cooldown = cooldownTime;
+
+elts.text1.textContent = texts[textIndex % texts.length];
+elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+
+function doMorph() {
+  morph -= cooldown;
+  cooldown = 0;
+
+  let fraction = morph / morphTime;
+
+  if (fraction > 1) {
+      cooldown = cooldownTime;
+      fraction = 1;
+  }
+
+  setMorph(fraction);
+}
+
+function setMorph(fraction) {
+  elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+  elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+  fraction = 1 - fraction;
+  elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+  elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+  elts.text1.textContent = texts[textIndex % texts.length];
+  elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+}
+
+function doCooldown() {
+  morph = 0;
+
+  elts.text2.style.filter = "";
+  elts.text2.style.opacity = "100%";
+
+  elts.text1.style.filter = "";
+  elts.text1.style.opacity = "0%";
+}
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  let newTime = new Date();
+  let shouldIncrementIndex = cooldown > 0;
+  let dt = (newTime - time) / 1000;
+  time = newTime;
+
+  cooldown -= dt;
+
+  if (cooldown <= 0) {
+      if (shouldIncrementIndex) {
+          textIndex++;
+      }
+
+      doMorph();
+  } else {
+      doCooldown();
   }
 }
 
-function composeText(text) {
-  return document.createTextNode(text);
-}
-
-function composeImage(attachments) {
-  const attachment = attachments[0];
-  const img = document.createElement("img");
-  img.setAttribute("id", attachment.id);
-  img.setAttribute("src", attachment.thumbnails.full.url);
-
-  return img;
-}
-
-
-
-
-
-
-
-
-
-
-// const menu = document.querySelector(".menu");
-// const menuItems = document.querySelectorAll(".menuItem");
-// const hamburger= document.querySelector(".hamburger");
-// const closeIcon= document.querySelector(".closeIcon");
-// const menuIcon = document.querySelector(".menuIcon");
-
-// function toggleMenu() {
-//   if (menu.classList.contains("showMenu")) {
-//     menu.classList.remove("showMenu");
-//     closeIcon.style.display = "none";
-//     menuIcon.style.display = "block";
-//   } else {
-//     menu.classList.add("showMenu");
-//     closeIcon.style.display = "block";
-//     menuIcon.style.display = "none";
-//   }
-// }
-
-// hamburger.addEventListener("click", toggleMenu);
-
-// menuItems.forEach( 
-//   function(menuItem) { 
-//     menuItem.addEventListener("click", toggleMenu);
-//   }
-// )
+animate();

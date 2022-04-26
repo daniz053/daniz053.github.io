@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Queer Print Archives</title>
+  <link rel="icon" href="assets/foldericon.png">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -53,16 +54,16 @@
   .sidenav a {font-size: 18px;}
 }
 </style>
+
 </head>
 <body>
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Random Print Archive</a>
-  <a href="#">About</a>
+  <a href="indextwo.html">Full Archives</a>
+  <a href="indexthree.html">About</a>
 </div>
 <img class="nav" src="assets/hamburger.svg" alt="hamburger nav bar" onclick="openNav()">
- <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> --> 
 
 <script>
 function openNav() {
@@ -76,7 +77,7 @@ function closeNav() {
 
 
 <body>
-<div class="wrapper">
+<div class="wrapper-main">
 <div class="credits">
   <marquee>Archive Collection by Alex Soukakos / Web Design by Zoey Poole</marquee>
 </div>
@@ -94,33 +95,41 @@ function closeNav() {
   <img src="assets/break.jpg"  style="width:70%; height:auto">
 </center>
 </div>
-
+</div>
+<div id="container">
+  <a href="indextwo.html"><span id="text1"></span></a>
+<a href="indextwo.html"><span id="text2"></span></a>
+</div>
+<svg id="filters">
+  <defs>
+<filter id="threshold">
+  <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        0 0 0 255 -140" />
+</filter>
+<div class="wrapper-main">
 <div class="filter-title">
-  Please choose from the list of options below to organize the archives.
+  Interested in exploring the full archives?
 </div>
 
 <div class="filter-description">
-Data archives have been made possible in part with Are.na members and community boards.
+click the moving text above to see the full collection with information on the archives, or scroll down
+to see thumbnails of some of the covers!
+</div>
 </div>
 
-<div class="brand">Brand</div>
-<div class="year-published">Date Published</div>
-<div class="covers">Cover Names</div>
-<div class="covers-images">Covers</div>
+
+
+<div class="wrapper">
 </div>
 
-<div class="data_cards">
-  <div class="data_display">
-    <div id="data_imgs" width="20%" height="auto"></div>
-    <div id="data_printCovers"></div>
-    <div id="data_brand"></div>
-    <div id="data_datePublished"></div>
-  </div>
-</div>
-
+<script src="airtable.browser.js"></script>
 <script src="style.js"></script>
-  <script src="lib/airtable.browser.js"></script>
 
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">go back to the top</button>
+<div class="signature">We do not claim the rights of the archives presented.</div>
 
   </body>
   </html>

@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Kulture";
+    src: url('./assets/fonts/kaotizm-regular.woff') format('woff');
+    /* src: url('./assets/fonts/kaotizm-italik.woff') format('woff');  */
+    src: url('./assets/fonts/kaotizm-bold.woff') format('woff');
+    /* src: url('./assets/fonts/kaotizm-bold-italic.woff') format('woff'); */
+}
+@font-face {
+    font-family: "Kulture Italic";
+    src: url('./assets/fonts/kaotizm-italik.woff') format('woff'); 
+    src: url('./assets/fonts/kaotizm-bold-italic.woff') format('woff');
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: "Kulture";
+    font-family: 'Inter', sans-serif;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.wrapper-main {
+    display: grid;
+  }
+  .nav {
+    width: 3vw;
+    height: 5vh;
+  }
+
+
+.about{
+    font-size: 10vw;
+    font-family: "Kulture";
+    
+}

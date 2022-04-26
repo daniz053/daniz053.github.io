@@ -19,7 +19,7 @@ body{
     margin-left: 1vw;
     margin-right: 1vw;
 }
-.wrapper {
+.wrapper-main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0px;
@@ -30,8 +30,9 @@ body{
   .nav {
     width: 3vw;
     height: 5vh;
-
-    /* position:fixed */
+  }
+  .nav:hover{
+    cursor: pointer;
   }
 
 .credits{
@@ -70,7 +71,6 @@ body{
 
     margin-top: 1vh;
     margin-right: 16vw;
-    /* margin-left: 2vw; */
 
 }
 .gif{
@@ -86,7 +86,6 @@ body{
     grid-column: 1 / -1;
     grid-row: 5 / 7;
     background-color: black;
-    /* margin: 1vw; */
 }
 .break img  {
     grid-column: 1 / -1;
@@ -101,108 +100,134 @@ body{
 
 .filter-title{
     grid-column: 1 / -1;
-    grid-row: 8;
-    font-size: 5.5vw;
+    grid-row: 2;
+    font-size: 5vw;
     font-family: "Kulture";
     font-style: normal;
-    /* margin: 1vw; */
+    margin-left: 5vw;
 }
 .filter-description{
     grid-column: 1 / -1;
-    grid-row: 9;
-    font-size: 2vw;
+    grid-row: 3;
+    font-size: 1.5vw;
     font-family: 'Inter';
     font-weight: lighter;
+    margin-left: 4vw;
+    margin-right: 5vw;
+    margin-bottom: -10vh;
+    text-align: center ;
 }
-.covers-images{
-    grid-column: 1;
-    grid-row: 10;
 
-    font-family: 'Inter';
-    font-size: 2vw;
-    border: black;
-    border-radius: 5vw;
-    border-style: solid;
-    text-align: center;
-    height: 5vh;
-    width: 10vw;
-    
-}
-.covers{
-    grid-column: 2;
-    grid-row: 10;
+#container {
+    grid-row: 8;
+    margin: auto;
+    width: 90vw;
+    height: 2vh;
+    top: 0;
+    bottom: 0;
+    margin-right: 2vw;
+    margin-top: 6vh;
 
-    font-family: 'Inter';
-    font-size: 2vw;
-    border: black;
-    border-radius: 5vw;
-    border-style: solid;
-    text-align: center;
-    height: 5vh;
-    width: 18vw;
-    margin-left: -3vw;
+    filter: url(#threshold) blur(0.6px);
 }
-.brand{
-    grid-column: 3;
-    grid-row: 10;
 
-    font-family: 'Inter';
-    font-size: 2vw;
-    border: black;
-    border-radius: 5vw;
-    border-style: solid;
-    text-align: center;
-    height: 5vh;
-    width: 10vw;
-    margin-left: 2vw;
-}
-.year-published{
-    grid-column: 4;
-    grid-row: 10;
+#text1,
+#text2 {
+    position: absolute;
+    width: 90vw;
+    display: inline-block;
+    margin-left: -2vw;
+    margin-top: 6vh;
 
-    font-family: 'Inter';
-    font-size: 2vw;
-    border: black;
-    border-radius: 5vw;
-    border-style: solid;
+    font-family: "Kulture";
+    font-size: 15vw;
+
     text-align: center;
-    height: 5vh;
-    width: 20vw;
+
+    user-select: none;
 }
-img {
-    margin-left: 2vh;
-    width: 20vw;
-    height: auto;
+a:link {
+    text-decoration: none;
+    color: black;
   }
-.data_cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: column;
-    overflow:wrap;
-  }
-.data_display {
-    display: flex;
-    justify-content: space-between;
-    /* flex-direction: row; */
-    /* flex-direction: column;
-    flex-wrap: wrap; */
-    /* align-content: space-between; */
-
-    width: 70vw;
-    font-family: 'Inter';
-    font-size: 2vw;
-  } 
-.data_imgs{
-    margin-top: auto;
-} 
-.data_printCovers{
-    margin-top: auto;
-}
-.data_brand{
-    margin-top: auto;
-}
-.data_datePublished{
-    margin-top: auto;
-}
   
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color:red;
+  }
+  
+  a:active {
+    text-decoration: underline;
+    color: black;
+  }
+.wrapper {
+  column-count: 10;
+  column-gap: 0vw;
+  margin-top: 10vh;
+  justify-content: space-around;
+  display: block;
+  font-family: 'Inter';
+  }
+
+.printcoverAttachments:hover {
+        position:relative;
+        top:-25px;
+        left:-35px;
+        width:300px;
+        height:auto;
+        display:block;
+        z-index:999;
+}
+
+.printcoverAttachments {
+    max-width: 30vw;
+    height: auto;
+    height: 30vh;
+    width: 10vw;
+  }
+
+.printcover{
+    display: none;
+}
+.datepublished{
+    display: none;
+}
+.value{
+    display: none;
+}
+
+button#myBtn{
+    /* display: block; */
+    align-self: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    text-transform: lowercase;
+    font-size: 20px;
+    margin-top: 10vh;
+    top: 50%;
+  transform: translatex(325%);
+}
+
+
+button#myBtn:hover {
+  cursor: pointer;
+  background-color: black !important;
+  color: white;
+  transition: all 100ms ease-in-out;
+}
+.signature{
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: oblique;
+    text-align: center;
+    color: grey;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+}
