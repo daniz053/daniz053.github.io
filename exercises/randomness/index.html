@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Randomness Homeworkd</title>
+  <link rel="icon" href=".png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</script>
+<style>
+  function randomize() {
+  document.getElementById('p1').style.color = randomColors();
+}
+
+
+// random colors - taken from here:
+// http://www.paulirish.com/2009/random-hex-color-code-snippets/
+
+function randomColors() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+</style>
+<body>
+  <div>
+    <p id="p1">Hello World</p>
+  </div>
+  
+  <button id="b1" onclick="randomize()">Click Me!</button>
+</body>

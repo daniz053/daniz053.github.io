@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+} */
+
+body {
+  transition: background 1s ease-in-out;
+}
