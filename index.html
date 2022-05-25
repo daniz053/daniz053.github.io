@@ -2,35 +2,211 @@
 <html>
 <head>
   <title>Zoey Poole Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-  <link rel="stylesheet" type="text/css" media="screen and (max-width: 320px)" href="portrait.css">
-  <link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="landscape.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" media="only screen and (min-width: 601px)" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="https://images.vexels.com/media/users/3/139158/isolated/preview/c862a3c9ef219140fb365301f9ebbd50-black-dot.png">
 </head>
+<style>
+     @media screen and (max-width: 414px){
+    *  body {
+      background-color: #fff;
+      margin: 0;
+      font-family: "HelveticaNeue-Light"; 
+      font-weight: 300;
+    }
+    
+    ul {
+      padding-left: 0.423728813559322vw;
+      list-style: none;
+      font-size: 1em;
+      margin-top: 0;
+    }
+  
+  .name{
+      padding-left: 0px;
+      min-width: 50%;
+      height: 2vw;
+      margin: 2vw;
+      font-size: 30px;
+      text-align: left;
+      line-height:  1em;
+      display: block;
+      border-width:  0.07062146892655367vw;
+  
+  }
+    .container {
+      max-width: 100%;
+      min-height: 100%;
+      margin: 0 auto;
+      display: block;
+      grid-gap: 0vw;
+      font-weight: 400;
+      
+    }
+  #marquee{
+      text-align: center;
+      width: 100%;
+      white-space: nowrap;
+      display: block;
+      min-width: 100%;
+      line-height:  30px;
+  }
+    
+    .header {
+      min-width: 50%;
+      height: 2vw;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 0vh;
+      grid-column-end: -1;
+      border-width: 0.07062146892655367vw;
+      font-weight: 400;
+    }
+    
+    .container > * {
+      padding: 1.1299435028248588vw;
+    }
+    
+    @media (max-width: 800px) {
+      .container {
+        grid-template-columns: none;
+      }
+    }
+  .title{
+      font-size:12px;
+      margin-top: 2vh;
+  }
+  .project{
+      font-size: 15px;
+  }
+  
+  p{
+   font-size: 10px;
+   width: 90%;
+   margin: 2vw;
+  }
+
+  .main-two{
+      border-top-color: black;
+      border-top-style: solid;
+      border-width: 0.07062146892655367vw;
+      display: none;
+  }
+  
+  .footer {
+      text-align: center;
+      grid-column-start: 1;
+      grid-column-end: -1;
+      border-top-color: black;
+      border-top-style: solid;
+      border-width: 0.07062146892655367vw;
+  
+      font-style:oblique;
+      font-size: 7px;
+      font-weight: 100;
+    }
+  
+    a:link {
+      color: black;
+      text-decoration: none;
+      font-size: 1.5em;
+    }
+    a:visited {
+      color: black;
+      text-decoration: none;
+    }
+    a:hover {
+      color: rgb(133, 133, 133);
+      text-decoration: solid;
+    }
+    a:active {
+      color: black;
+      text-decoration: none;
+    }
+  
+.nav {
+  display: block;
+  float:right;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  margin-bottom: 2vh;
+    }
+.nav #sidebar {
+  display: none;
+  width: 100vw;
+  height: 10vh;
+  line-height: 20px;
+  columns: 2;
+}
+.nav a {
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.nav li{
+    list-style:disc;
+    margin-left: 10vw;
+}
+.nav a.icon {
+  color: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.nav a:hover {
+  color: black;
+}
+
+.active {
+  background-color: #000000;
+  color: white;
+}
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    margin-left: 90vw;
+    margin-top: -5vh;
+    position: absolute;
+}
+}
+</style>
 <body>
     <div class="container">
         <div class="name"><a href="index.html">ZOEY POOLE</a></div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
         <header class="header"> 
             <marquee>welcome to my creative coding portfolio if you have any questions please reach out!</marquee>
         </header>
-        <aside class="sidebar">
-          <ul>
-            <li><a href="https://www.instagram.com/zoeypooole/">instagram</a></li>
-            <li><a href="https://www.are.na/zoey-poole">are.na</a></li>
-            <li><a href="https://github.com/daniz053">github</a></li>
-            <li><a href="mailto:zoeyrpoole@gmail.com">email</a></li>
-            <li><a href="index2.html">classmates</a></li>
-            <li><a href="https://cis22.labud.nyc">course homepage</a></li>
-            <li><a href="https://daniz053.github.io/exercises/old-homepage/index.html">old homepage <br> (best displayed in chrome)</a></li>
-          </ul>
-        </aside>
-        
-    
-        
+        <div class="nav">
+        <div id="sidebar" class="sidebar">
+            <ul>
+                <li><a href="https://www.instagram.com/zoeypooole/">instagram</a></li>
+                <li><a href="https://www.are.na/zoey-poole">are.na</a></li>
+                <li><a href="https://github.com/daniz053">github</a></li>
+                <li><a href="mailto:zoeyrpoole@gmail.com">email</a></li>
+                <li><a href="index2.html">classmates</a></li>
+                <li><a href="https://cis22.labud.nyc">course homepage</a></li>
+                <li><a href="https://daniz053.github.io/exercises/old-homepage/index.html">old homepage</a></li>
+              </ul>
+          </div>
+        </div>          
+          <script>
+            function myFunction() {
+              var x = document.getElementById("sidebar");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
         <main class="main">
          <div class="title">PROJECTS:</div>
             <div class="project">
