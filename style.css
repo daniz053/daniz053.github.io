@@ -20,11 +20,11 @@
     text-align: left;
     line-height:  1em;
 
-    border-bottom-color: black;
+    /* border-bottom-color: black;
     border-bottom-style: solid;
     border-right-color: black;
     border-right-style: solid;
-    border-width:  0.07062146892655367vw;
+    border-width:  0.07062146892655367vw; */
 
 }
   .container {
@@ -37,7 +37,7 @@
     font-weight: 400;
     
   }
-#marquee{
+/* #marquee{
     text-align: center;
     width: 100%;
     margin: 0 auto;
@@ -45,7 +45,7 @@
     white-space: nowrap;
     min-width: 100%;
     line-height:  1.5em;
-}
+} */
   
   .header {
     min-width: 50%;
@@ -63,9 +63,9 @@
     padding: 1.1299435028248588vw;
   }
   .sidebar{
-    border-right-color: black;
+    /* border-right-color: black;
     border-right-style: solid;
-    border-width: 0.07062146892655367vw;
+    border-width: 0.07062146892655367vw; */
     padding-left: 1em;
   }
   
