@@ -1,0 +1,13 @@
+.image-one{
+    font: 50;
+    font-size: 1vw;
+    font-family: 'Courier New', Courier, monospace;
+    width: fit-content;
+    height: fit-content;
+    color: red;
+}
+.p{
+    font: 50;
+    font-size: 1vw;
+    font-family: 'Courier New', Courier, monospace;
+}
