@@ -1,5 +1,9 @@
 body{
-    background-color: red;
+   background-color: white;
+}
+.image-one{
+    width: 20vw;
+    height: 10vh;
 }
 p{
     font: 50;
