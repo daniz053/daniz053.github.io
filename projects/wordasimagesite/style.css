@@ -6,8 +6,10 @@
     height: fit-content;
     color: red;
 }
-.p{
+p{
     font: 50;
-    font-size: 1vw;
+    font-size: 10px;
     font-family: 'Courier New', Courier, monospace;
+    text-align: justify; 
+    text-justify: auto;
 }
