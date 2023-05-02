@@ -78,7 +78,7 @@
 
 /* columns */
 .two-columns-grid > * {
-    padding:1rem;
+    padding:0rem;
 }
   a {
     color: inherit;
@@ -113,6 +113,8 @@
     transform-style: preserve-3d;
     -webkit-animation: 10s rotatingAnimationY linear infinite;
     animation: 10s rotatingAnimationY linear infinite;
+    margin-left: 10vw;
+
   }
   .book-container > div {
     position: absolute;
@@ -122,6 +124,7 @@
     background-position: center center;
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
+
   }
   .book-top, .book-bottom, .book-side-right {
     background-size: auto auto;
@@ -171,23 +174,7 @@
     -webkit-transform: translate3d(-200px ,-200px ,29px) translate3d(0,0, -58px) rotateY(180deg);
     transform: translate3d(-200px ,-200px ,29px) translate3d(0,0, -58px) rotateY(180deg);
   }
-  #credit {
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
-    z-index: 99;
-    background-color: #fff;
-    border-radius: 8px;
-    box-sizing: border-box;
-    padding: .3rem 1rem;
-    width: 21rem;
-    height: 20px;
-    -webkit-transition: background .2s;
-    transition: background .2s;
-  }
-  #credit:hover {
-    background-color: #d8d8d8;
-  }
+
       
   .container-2 {
     width: 40vw;
@@ -204,8 +191,6 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 20vw;
-    margin-top: -60vh;
   }
   .container-2 > div {
     -webkit-transform-style: preserve-3d;
@@ -278,21 +263,20 @@
     -webkit-transform: translate3d(-200px ,-200px ,29px) translate3d(0,0, -58px) rotateY(180deg);
     transform: translate3d(-200px ,-200px ,29px) translate3d(0,0, -58px) rotateY(180deg);
   }
-  #credit {
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
-    z-index: 99;
-    background-color: #fff;
-    border-radius: 8px;
-    box-sizing: border-box;
-    padding: .3rem 1rem;
-    width: 21rem;
-    height: 20px;
-    -webkit-transition: background .2s;
-    transition: background .2s;
+
+        /* Media queries for responsive design */
+@media (max-width: 767px) {
+    .container, .container-2 {
+      width: 100%;
+      height: auto;
+    }
   }
-  #credit:hover {
-    background-color: #d8d8d8;
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .container, .container-2 {
+      width: 50%;
+      height: auto;
+    }
   }
-        
+  
+ 
