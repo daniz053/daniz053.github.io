@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'ascii-boldregular';
-    src: url('ascii-bold-webfont.woff2') format('woff2'),
-         url('ascii-bold-webfont.woff') format('woff');
+    src: url('https://daniz053.github.io/projects/wordasimagesite/fonts/ascii-bold-webfont.woff2') format('woff2'),
+         url('https://daniz053.github.io/projects/wordasimagesite/fonts/ascii-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'ascii-lightregular';
-    src: url('ascii-light-webfont.woff2') format('woff2'),
-         url('ascii-light-webfont.woff') format('woff');
+    src: url('https://daniz053.github.io/projects/wordasimagesite/fonts/ascii-light-webfont.woff2') format('woff2'),
+         url('https://daniz053.github.io/projects/wordasimagesite/fonts/ascii-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -24,8 +24,8 @@
 
 @font-face {
     font-family: 'ascii-mediummedium';
-    src: url('ascii-medium-medium-webfont.woff2') format('woff2'),
-         url('ascii-medium-medium-webfont.woff') format('woff');
+    src: url('https://daniz053.github.io/projects/wordasimagesite/fonts/ascii-medium-medium-webfont.woff2') format('woff2'),
+         url('https://daniz053.github.io/projects/wordasimagesite/fonts/ascii-medium-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -36,20 +36,39 @@
 
 @font-face {
     font-family: 'ascii-regularregular';
-    src: url('ascii-regular-webfont.woff2') format('woff2'),
-         url('ascii-regular-webfont.woff') format('woff');
+    src: url('https://daniz053.github.io/projects/wordasimagesite/fonts/ascii-regular-webfont.woff2') format('woff2'),
+         url('https://daniz053.github.io/projects/wordasimagesite/fonts/ascii-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
-p{
+h1{
     font-family: 'ascii-boldregular';
-    font-size: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+h2{
+    font-family: 'ascii-lightregular';
+    font-size: 15px;
+    text-transform: uppercase;
 }
 body{
    background-color: white;
    height: 100%;
    width: auto;
+   margin: 0%;
+}
+.text-one{
+    width: 80vw;
+    height: auto;
+    margin-left: 18vw;
+    text-align: justify;
+}
+.text-two{
+    width: 80vw;
+    height: auto;
+    margin-right: 18vw;
+    text-align: justify;
 }
 .image-one{
     width: 1000px;
@@ -64,4 +83,30 @@ body{
     /* letter-spacing: -1px; */
     /* margin-bottom: 30px; */
     padding: 3px;
+}
+.marquee{
+    background-color: black;
+    color: white;
+    height: 25px;
+}
+marquee{
+    font-family: 'ascii-lightregular';
+    text-transform: uppercase;
+    margin: -4px auto;
+}
+marquee:hover{
+    font-family: 'ascii-mediummedium';
+    text-transform: uppercase;
+}
+
+.tiresult{
+    width: max-content;
+    height: max-content;
+    white-space: pre;
+    color: #242424;
+    z-index: 3;
+    font-size: 12px;
+    font-family: monospace;
+    display: block;
+    position: absolute;
 }
