@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+
+.back-button{
+    margin: 10px;
+    position: absolute;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .column {
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  a{
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .column {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
