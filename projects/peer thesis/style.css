@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'CirrusCumulus';
+    src: url('fonts/CirrusCumulus.otf') format('otf'),
+          url('fonts/CirrusCumulus.ttf') format('ttf'),
+          url('fonts/CirrusCumulus.woff') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  body{
+      background-color: black;
+      font: 'CirrusCumulus';
+  }
+
+  h2{
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:black;
+    font-size: 30px;
+
+  }
+
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:white;
+    width: 60%;
+    align-items: right;
+    margin-left: 20%;
+    margin-top: 45%;
+  }
