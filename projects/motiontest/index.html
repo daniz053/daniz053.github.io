@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet" />
+<style>
+
+    body {
+        margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        overflow-x: scroll;
+        background-color: black;
+
+    }
+    
+    .container  {
+        display: flex;
+    }
+    
+        .column {
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            animation: flashAndReveal 2s ease forwards;
+        }
+        @keyframes flashAndReveal {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .container .column:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .container .column:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .container .column:nth-child(3) {
+            animation-delay: 2s;
+        }
+
+        .container .column:nth-child(4) {
+            animation-delay: 3s;
+        }
+
+        .container .column:nth-child(5) {
+            animation-delay: 4s;
+        }
+
+        .container .column:nth-child(6) {
+            animation-delay: 5s;
+        }
+
+        .container .column:nth-child(7) {
+            animation-delay: 6s;
+        }
+
+        .container .column:nth-child(8) {
+            animation-delay: 7s;
+        }
+
+        .container .column:nth-child(9) {
+            animation-delay: 8s;
+        }
+
+        .container .column:nth-child(10) {
+            animation-delay: 9s;
+        }
+
+        .container .column:nth-child(11) {
+            animation-delay: 10s;
+        }
+
+        .container .column:nth-child(12) {
+            animation-delay: 11s;
+        }
+
+        .container .column:nth-child(13) {
+            animation-delay: 12s;
+        }
+
+        .container .column:nth-child(14) {
+            animation-delay: 13s;
+        }
+
+        .container .column:nth-child(15) {
+            animation-delay: 14s;
+        }
+
+        .container .column:nth-child(16) {
+            animation-delay: 15s;
+        }
+
+        .container .column:nth-child(17) {
+            animation-delay: 16s;
+        }
+
+        .container .column:nth-child(18) {
+            animation-delay: 17s;
+        }
+
+        .container .column:nth-child(19) {
+            animation-delay: 18s;
+        }
+
+        .container .column:nth-child(20) {
+            animation-delay: 19s;
+        }
+
+        .container .column:nth-child(21) {
+            animation-delay: 20s;
+        }
+
+        .container .column:nth-child(22) {
+            animation-delay: 21s;
+        }
+
+        .container .column:nth-child(23) {
+            animation-delay: 22s;
+        }
+
+        .container .column:nth-child(24) {
+            animation-delay: 23s;
+        }
+
+        .container .column:nth-child(25) {
+            animation-delay: 24s;
+        }
+
+        .container .column:nth-child(26) {
+            animation-delay: 25s;
+        }
+
+        .container .column:nth-child(27) {
+            animation-delay: 26s;
+        }
+        
+
+
+
+      
+    .cell {
+            height: 220px;
+            width: 220px;
+            margin: 1px;
+            background-color: black;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+
+        .cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+</style>
+</head>
+<body>
+
+    <audio id="musicplayer" autoplay>
+        <source src="/assets/Project - 11_8_23, 2.06 PM.m4a" />
+      </audio>
+    <div class="container">
+
+        <div class="column">
+        <div class="cell">
+            <img src="/assets/BECKGIF copy/ezgif-frame-050.jpg" alt="Photo 0">
+        </div>
+        <div class="cell">
+            <img src="/assets/YUKAGIIF copy/ezgif-frame-050.jpg" alt="Photo 0">
+        </div>
+        <div class="cell">
+            <img src="/assets/MEGIF copy/ezgif-frame-050.jpg" alt="Photo 0">
+        </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-051.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-050.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-050.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-052.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-052.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-052.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-053.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-053.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-053.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-054.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-054.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-054.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-055.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-055.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-055.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-056.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-056.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-056.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-057.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-057.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-057.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-057.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-057.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-057.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-057.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-057.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-057.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-058.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-058.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-058.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-059.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-059.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-059.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-060.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-060.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-060.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-061.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-061.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-061.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-062.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-062.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-062.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-063.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-063.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-063.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-064.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-064.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-064.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-065.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-065.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-065.jpg" alt="Photo 0">
+            </div>
+        </div>
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-066.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-066.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-066.jpg" alt="Photo 0">
+            </div>
+        </div>
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-067.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-067.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-067.jpg" alt="Photo 0">
+            </div>
+        </div>
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-068.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-068.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-068.jpg" alt="Photo 0">
+            </div>
+        </div>
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-069.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-069.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-069.jpg" alt="Photo 0">
+            </div>
+        </div>
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-070.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-070.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-070.jpg" alt="Photo 0">
+            </div>
+        </div>
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-071.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-071.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-071.jpg" alt="Photo 0">
+            </div>
+        </div>
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-072.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-072.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-072.jpg" alt="Photo 0">
+            </div>
+        </div>
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-073.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-073.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-073.jpg" alt="Photo 0">
+            </div>
+        </div>
+        <div class="column">
+            <div class="cell">
+                <img src="/assets/BECKGIF copy/ezgif-frame-074.jpg" alt="Photo 1">
+            </div>
+            <div class="cell">
+                <img src="/assets/YUKAGIIF copy/ezgif-frame-074.jpg" alt="Photo 0">
+            </div>
+            <div class="cell">
+                <img src="/assets/MEGIF copy/ezgif-frame-074.jpg" alt="Photo 0">
+            </div>
+        </div>
+
+        </div>
+    </body>
+    </html> 
